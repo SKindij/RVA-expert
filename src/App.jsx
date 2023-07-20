@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import Welcome from '../src/components/welcome/Welcome';
 import Navigation from '../src/components/navigation/Navigation';
 import Main from '../src/components/main/Main';
@@ -8,14 +8,10 @@ import { motion } from 'framer-motion';
 import { BreakpointsContext } from '../src/context/breakpoints-context';
 
 const appbarVariants = {
-  initial: {
-    y: -100,
-  },
+  initial: { y: -100 },
   animate: {
     y: 0,
-    transition: {
-      duration: 1,
-    },
+    transition: { duration: 1 },
   },
 };
 
@@ -25,22 +21,19 @@ export default function App() {
   return (
     <>
       <Welcome />
-	  
+ 
       {/* Використовуємо умовний оператор, щоб відображати Navigation тільки для малих екранів */}
       {ctx.isSmall && (
         <Navigation
-          initial="initial"
-          animate="animate"
-          variants={appbarVariants}
-          component={motion.div}
-          show={true}
-          position={null} // Вкажіть позицію, якщо потрібно
+          initial="initial" animate="animate"
+          variants={appbarVariants} component={motion.div}
+          show={true} position={null} // Вкажіть позицію, якщо потрібно
         />
       )}
-	  
+ 
       <Main />
-	  
-	  <Copyright />
+ 
+       <Copyright />
     </>
   );
 }
