@@ -1,23 +1,46 @@
-
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-
-
-
+import React, { useContext } from 'react';
+import Welcome from '../src/components/welcome/Welcome';
+import Navigation from '../src/components/navigation/Navigation';
+import Main from '../src/components/main/Main';
 import Copyright from './components/common/Copyright';
 
+import { motion } from 'framer-motion';
+import { BreakpointsContext } from '../src/context/breakpoints-context';
+
+const appbarVariants = {
+  initial: {
+    y: -100,
+  },
+  animate: {
+    y: 0,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
 export default function App() {
+  const ctx = useContext(BreakpointsContext);
+
   return (
-    <Container maxWidth="md" sx={{ border: '1px dashed grey' }}>
-
-      <Typography variant="h4" component="h1" gutterBottom>
-        RVA Ролети Ворота Автоматика
-        Тех-Рішення
-      </Typography>
-
-
-      <Copyright />   
-         
-    </Container>
+    <>
+      <Welcome />
+	  
+      {/* Використовуємо умовний оператор, щоб відображати Navigation тільки для малих екранів */}
+      {ctx.isSmall && (
+        <Navigation
+          initial="initial"
+          animate="animate"
+          variants={appbarVariants}
+          component={motion.div}
+          show={true}
+          position={null} // Вкажіть позицію, якщо потрібно
+        />
+      )}
+	  
+      <Main />
+	  
+	  <Copyright />
+    </>
   );
 }
