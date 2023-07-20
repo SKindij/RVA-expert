@@ -16,7 +16,7 @@ const containerVariants = {
   animate: { opacity: 1, transition: { duration: 2 } },
 };
 
-export default function () {
+export default function Welcome () {
   const ctx = useContext(BreakpointsContext);
 
   return (
