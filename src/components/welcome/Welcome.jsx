@@ -1,10 +1,10 @@
-import WelcomeParticles from './Welcome/WelcomeParticles';
-import WelcomeLogo from './Welcome/WelcomeLogo';
-import WelcomeBackground from './Welcome/WelcomeBackground';
-import WelcomeCompany from './Welcome/WelcomeCompany';
-import WelcomeButton from './Welcome/WelcomeButton';
-import WelcomeLine from './Welcome/WelcomeLine';
-import WelcomeLinks from './Welcome/WelcomeLinks';
+import WelcomeParticles from './WelcomeParticles';
+import WelcomeLogo from './WelcomeLogo';
+import WelcomeBackground from './WelcomeBackground';
+import WelcomeCompany from './WelcomeCompany';
+import WelcomeButton from './WelcomeButton';
+import WelcomeLine from './WelcomeLine';
+import WelcomeLinks from './WelcomeLinks';
 
 import { useContext } from 'react';
 import { BreakpointsContext } from '../../../context/breakpoints-context';
