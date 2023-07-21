@@ -5,8 +5,8 @@ import {
   TypographyHeader,
   TypographyParagraph,
 } from '../../common/TypographyVariants';
-import MainProductionGallery from './Objects/MainProductionGallery';
-import MainProductionArray from './Objects/MainProductionArray';
+import MainProductionGallery from './Objects/MainObjectsGallery';
+import MainProductionArray from './Objects/MainObjectsArray';
 
 const ProductionVariants = {
   initial: { y: 150 },
