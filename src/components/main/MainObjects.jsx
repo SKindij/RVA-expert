@@ -20,7 +20,7 @@ const MotionProps = {
   variants: ProductionVariants,
 };
 
-export default function MainProduction() {
+export default function MainObjects() {
   return (
     <Grid
       sx={{ backgroundColor: '#F3F3F3' }}
