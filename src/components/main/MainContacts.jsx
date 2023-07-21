@@ -2,7 +2,6 @@ import { Grid } from '@mui/material';
 import { TypographyHeader, TypographyParagraph } from '../../common/TypographyVariants';
 import MainContactsInfo from './Contacts/MainContactsInfo';
 import MainContactsArray from './Contacts/MainContactsArray';
-import MainContactsForm from './Contacts/MainContactsForm';
 import { motion } from 'framer-motion';
 
 const ParagraphVariants = {
@@ -34,9 +33,7 @@ export default function MainContacts() {
       <Grid item xs={12} md={3}>
         <MainContactsInfo data={MainContactsArray} />
       </Grid>
-      <Grid item md={9}>
-        <MainContactsForm />
-      </Grid>
+
       <Grid item container justifyContent="center" my={5}>
         <TypographyHeader sx={{ mx: 2 }} {...MotionProps} component={motion.p}>
           Ви також можете знайти нас на карті
