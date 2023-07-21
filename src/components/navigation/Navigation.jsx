@@ -1,6 +1,6 @@
 import { AppBar, Toolbar, Grid } from '@mui/material';
 import { useContext, useState, useEffect } from 'react';
-import { BreakpointsContext } from '../../context/breakpoints-context';
+import { BreakpointsContext } from '../breakpoints-context';
 import NavLogo from './NavLogo';
 import NavLinks from './NavLinks/NavLinks';
 import NavButtons from './NavButtons/NavButtons';
