@@ -1,7 +1,7 @@
 import MainCompany from './MainCompany';
 import MainGallery from './MainGallery';
 import MainWhyUs from './MainWhyUs';
-import MainProduction from './MainProduction';
+import MainObjects from './MainObjects';
 import MainContacts from './MainContacts';
 
 export default function Main() {
@@ -10,7 +10,7 @@ export default function Main() {
       <MainCompany />
       <MainGallery />
       <MainWhyUs />
-      <MainProduction />
+      <MainObjects />
       <MainContacts />
     </>
   );
