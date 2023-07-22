@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Grid } from '@mui/material';
-import WelcomeLogoImage from './WelcomeLogo/WelcomeLogoImage';
+import WelcomeLogoImage from './WelcomeLogoImage';
 
 const logoVariants = {
   initial: {

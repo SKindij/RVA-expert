@@ -1,0 +1,55 @@
+.welcomeLinks p {
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.welcomeLinks p::before,
+.welcomeLinks p::after {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  height: 1px;
+  margin-top: -1px;
+  background: #fff;
+  content: '';
+  z-index: -1;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  pointer-events: none;
+}
+
+.welcomeLinks p::before {
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+
+.welcomeLinks p::after {
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  transform: translateY(20px);
+}
+
+.welcomeLinks p:hover::before,
+.welcomeLinks p:hover::after,
+.welcomeLinks p:focus::before,
+.welcomeLinks p:focus::after {
+  opacity: 0.4;
+}
+
+.welcomeLinks p:hover::before,
+.welcomeLinks p:focus::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.welcomeLinks p:hover::after,
+.welcomeLinks p:focus::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}

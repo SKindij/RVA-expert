@@ -7,7 +7,7 @@ import WelcomeLine from './WelcomeLine';
 import WelcomeLinks from './WelcomeLinks';
 
 import { useContext } from 'react';
-import { BreakpointsContext } from '../../../context/breakpoints-context';
+import { BreakpointsContext } from '../breakpoints-context';
 import { motion } from 'framer-motion';
 import { Grid, Box } from '@mui/material';
 

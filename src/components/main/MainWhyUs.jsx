@@ -1,5 +1,5 @@
 import { Grid } from '@mui/material';
-import { TypographyHeader, TypographyParagraph } from '../../common/TypographyVariants';
+import { TypographyHeader, TypographyParagraph } from '../common/TypographyVariants';
 import MainWhyUsBox from './WhyUs/MainWhyUsBox';
 import MainWhyUsArray from './WhyUs/MainWhyUsArray';
 import { motion } from 'framer-motion';

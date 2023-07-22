@@ -1,5 +1,4 @@
 import { Grid } from '@mui/material';
-import Link from '../../common/Link';
 
 export default function NavLogo() {
   return (

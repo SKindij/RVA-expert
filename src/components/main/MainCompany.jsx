@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material';
 import MainTypowriter from './Company/MainTypowriter';
 import { motion } from 'framer-motion';
-import { TypographyParagraph } from '../../common/TypographyVariants';
+import { TypographyParagraph } from '../common/TypographyVariants';
 
 const paragraphVariants = {
   initial: { opacity: 0 },
