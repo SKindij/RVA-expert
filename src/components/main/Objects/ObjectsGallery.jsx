@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Grid, Box } from '@mui/material';
 import { motion } from 'framer-motion';
 import InsertLinkRoundedIcon from '@mui/icons-material/InsertLinkRounded';
@@ -41,3 +42,12 @@ export default function MainProductionGallery(props) {
     </Grid>
   );
 }
+
+MainProductionGallery.propTypes = {
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      src: PropTypes.string.isRequired,
+      alt: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};

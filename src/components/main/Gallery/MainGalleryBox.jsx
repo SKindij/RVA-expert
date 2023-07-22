@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
-import Image from 'next/image';
 import { MainGalleryWrapperBox } from './MainGalleryWrapper';
+import PropTypes from 'prop-types';
 
 export default function MainGalleryBox(props) {
   return (
@@ -10,10 +10,8 @@ export default function MainGalleryBox(props) {
           {props.images.map((image) => {
             return (
               <Box key={image.src} sx={{ width: '100%', marginX: '0.2rem' }}>
-                <Image
-                  width={270}
-                  height={203}
-                  src
+                <img
+                  style={{ width: '100%', height: 'auto' }}
                   src={image.src}
                   alt="изображение"
                 />
@@ -25,3 +23,12 @@ export default function MainGalleryBox(props) {
     </>
   );
 }
+
+// PropTypes для перевірки пропсів
+MainGalleryBox.propTypes = {
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      src: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
