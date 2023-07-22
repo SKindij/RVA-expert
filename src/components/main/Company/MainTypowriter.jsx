@@ -12,7 +12,7 @@ const typeVariants = {
   },
 };
 
-export default function () {
+export default function MainTypowriter() {
   return (
     <TypographyHeader
       paragraph
@@ -25,20 +25,21 @@ export default function () {
         onInit={(typewriter) => {
           typewriter
             .pauseFor(500)
-            .typeString('Компания Нефтегазмаш')
-            .pauseFor(1000)
-            .deleteAll()
-            .typeString('Сотни')
-            .deleteChars(5)
-            .typeString('<strong>Сотни</strong> проектов')
-            .pauseFor(1000)
-            .deleteAll()
-            .typeString('Более 20 лет на рынке')
-            .pauseFor(1000)
-            .deleteAll()
-            .typeString('Индивидуальный подход')
-            .pauseFor(1000)
-            .start();
+            .typeString('Компанія <strong>"Тех-Рішення"</strong>')
+              .pauseFor(1000)
+              .deleteAll()
+            .typeString('Багаторічний практичний досвід!')
+              .pauseFor(1000)
+              .deleteAll()
+            .typeString('<strong>RVA -</strong> Ролети. Ворота. Автоматика.')
+              .pauseFor(1000)
+              .deleteAll()
+            .typeString("Індивідуальний підхід до кожного об'єкту!")
+              .pauseFor(1000)
+              .deleteAll()
+            .typeString('<strong>RVA.expert -</strong> Якість гарантовано!')
+              .pauseFor(1000)
+              .start();
         }}
         options={{
           autoStart: true,

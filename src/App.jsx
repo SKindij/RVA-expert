@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 //import Welcome from '../src/components/welcome/Welcome';
 //import Navigation from '../src/components/navigation/Navigation';
-//import Main from '../src/components/main/Main';
+import Main from '../src/components/main/Main';
 import Copyright from './components/common/Copyright';
 
 import { motion } from 'framer-motion';
@@ -39,11 +39,7 @@ export default function App() {
       )}
 */}
 
-{/*
       <Main />
-*/}
-
-
 
        <Copyright />
     </>
