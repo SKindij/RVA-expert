@@ -16,7 +16,7 @@ const companyVariants = {
   },
 };
 
-export default function () {
+export default function WelcomeCompany() {
   const [animation, cycleAnimation] = useCycle('animationOne', 'animationTwo');
 
   useEffect(() => {

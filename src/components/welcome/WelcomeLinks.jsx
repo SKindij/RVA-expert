@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Grid, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
 import classes from './WelcomeLinks.module.css';
@@ -21,7 +22,7 @@ const links = [
   },
 ];
 
-export default function () {
+export default function WelcomeLinks () {
   const linksVariants = {
     initial: { x: '100vw' },
     animate: { x: 0, transition: { duration: 2, delay: 1 } },

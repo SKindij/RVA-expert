@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
@@ -24,4 +25,9 @@ export const BreakpointsContextProvider = (props) => {
       {props.children}
     </BreakpointsContext.Provider>
   );
+};
+
+// Валідація пропсів
+BreakpointsContextProvider.propTypes = {
+  children: PropTypes.node.isRequired,
 };

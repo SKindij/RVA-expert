@@ -12,7 +12,7 @@ const logoVariants = {
   },
 };
 
-export default function () {
+export default function WelcomeLogo () {
   return (
     <Grid
       item
