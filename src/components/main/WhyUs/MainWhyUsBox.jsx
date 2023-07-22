@@ -1,8 +1,9 @@
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Grid, Paper } from '@mui/material';
 import { motion } from 'framer-motion';
 import { TypographyParagraphNoMargin } from '../../common/TypographyVariants';
 import MainWhyUsBoxSVG from './MainWhyUsBoxSVG';
-import { useState } from 'react';
 
 const paperVariants = {
   initial: { backgroundColor: '#FFF', scale: 1, y: '20vh' },
@@ -11,40 +12,25 @@ const paperVariants = {
 };
 
 export default function MainWhyUs(props) {
+  const { componentId, header, text } = props;
   const [colorIcon, setColorIcon] = useState('#FF9327');
   const [colorText, setColorText] = useState('black');
+
+  const handleColorChange = (ev, iconColor, textColor) => {
+    setColorIcon(iconColor);
+    setColorText(textColor);
+    ev.preventDefault();
+  };
 
   return (
     <Grid item xs={12} lg={2.3}>
       <Paper
-        onMouseEnter={(ev) => {
-          setColorIcon('#FFF');
-          setColorText('#FFF');
-        }}
-        onMouseLeave={(ev) => {
-          setColorIcon('#FF9327');
-          setColorText('black');
-        }}
-        onTouchStart={(ev) => {
-          setColorIcon('#FFF');
-          setColorText('#FFF');
-          ev.preventDefault();
-        }}
-        onTouchEnd={(ev) => {
-          setColorIcon('#FF9327');
-          setColorText('black');
-          ev.preventDefault();
-        }}
-        onTouchMove={(ev) => {
-          setColorIcon('#FF9327');
-          setColorText('black');
-          ev.preventDefault();
-        }}
-        onTouchCancel={(ev) => {
-          setColorIcon('#FF9327');
-          setColorText('black');
-          ev.preventDefault();
-        }}
+        onMouseEnter={(ev) => handleColorChange(ev, '#FFF', '#FFF')}
+        onMouseLeave={(ev) => handleColorChange(ev, '#FF9327', 'black')}
+        onTouchStart={(ev) => handleColorChange(ev, '#FFF', '#FFF')}
+        onTouchEnd={(ev) => handleColorChange(ev, '#FF9327', 'black')}
+        onTouchMove={(ev) => handleColorChange(ev, '#FF9327', 'black')}
+        onTouchCancel={(ev) => handleColorChange(ev, '#FF9327', 'black')}
         elevation={6}
         variants={paperVariants}
         whileInView="animate"
@@ -59,6 +45,7 @@ export default function MainWhyUs(props) {
           marginX: { xs: '2.5rem', sm: '4rem', md: '6rem', lg: '0.99rem' },
           fontSize: '3rem',
           borderRadius: '1.5rem',
+          backgroundColor: colorIcon, 
         }}
         component={motion.div}
       >
@@ -67,7 +54,7 @@ export default function MainWhyUs(props) {
           justifyContent="center"
           alignItems="center"
         >
-          <MainWhyUsBoxSVG color={colorIcon} componentId={props.componentId} />
+          <MainWhyUsBoxSVG color={colorIcon} componentId={componentId} />
 
           <TypographyParagraphNoMargin
             sx={{
@@ -77,15 +64,22 @@ export default function MainWhyUs(props) {
               fontWeight: '700',
             }}
           >
-            {props.header}
+            {header}
           </TypographyParagraphNoMargin>
           <TypographyParagraphNoMargin
             sx={{ color: colorText, margin: '1rem', pb: 2, pt: { lg: 5 } }}
           >
-            {props.text}
+            {text}
           </TypographyParagraphNoMargin>
         </Grid>
       </Paper>
     </Grid>
   );
 }
+
+// Валідація пропсів
+MainWhyUs.propTypes = {
+  componentId: PropTypes.string.isRequired,
+  header: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+};
