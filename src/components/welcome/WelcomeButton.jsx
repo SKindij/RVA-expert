@@ -2,7 +2,6 @@ import { motion, useCycle } from 'framer-motion';
 import ArrowCircleDownSharpIcon from '@mui/icons-material/ArrowCircleDownSharp';
 import { Grid } from '@mui/material';
 import { useEffect } from 'react';
-import Link from '../../../../Link';
 
 const arrowVariants = {
   animationInitial: {
@@ -17,7 +16,7 @@ const arrowVariants = {
   },
 };
 
-export default function () {
+export default function WelcomeButton () {
   const [animation, cycleAnimation] = useCycle(
     'animationInitial', 'animationConstant'
   );

@@ -1,7 +1,6 @@
 import { Grid, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
 import classes from './WelcomeLinks/WelcomeLinks.module.css';
-import Link from '../common/Link';
 
 const links = [
   {

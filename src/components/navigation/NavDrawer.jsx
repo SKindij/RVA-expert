@@ -12,7 +12,6 @@ import CalculateIcon from '@mui/icons-material/Calculate';
 import BuildIcon from '@mui/icons-material/Build';
 import MailIcon from '@mui/icons-material/Mail';
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
-import Link from '../common/Link';
 import { buttons } from './NavButtons';
 import { links } from './NavLinks';
 
@@ -67,7 +66,7 @@ export default function PersistentDrawerRight() {
           {links.map((link, index) => (
             <ListItem
               button
-              key={link.text} component={Link}
+              key={link.text}
               href={link.href} onClick={handleDrawerClose}
             >
               <ListItemIcon>
@@ -88,7 +87,7 @@ export default function PersistentDrawerRight() {
           {buttons.map((button, index) => (
             <ListItem
               button
-              key={button.title} component={Link}
+              key={button.title}
               href={button.href} onClick={handleDrawerClose}
             >
               <ListItemIcon>

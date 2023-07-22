@@ -1,5 +1,4 @@
 import { Button, Grid, Typography } from '@mui/material';
-import Link from '../common/Link';
 import { motion } from 'framer-motion';
 
 export const links = [
@@ -22,7 +21,7 @@ export default function NavLinks() {
     return (
       <Grid item key={link.text}>
         <Button
-          variant="text"  component={Link}
+          variant="text"
           noLinkStyle sx={{ color: 'black' }}
           href={link.href}
         >

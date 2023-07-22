@@ -8,7 +8,6 @@ import Paper from '@mui/material/Paper';
 import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
-import Link from '../common/Link';
 
 const options = ['Розрахунок цін', 'Продукція'];
 const hrefs = ['/calculator', '/production'];
@@ -42,7 +41,7 @@ export default function SplitButton() {
         aria-label="split button"
       >
         <Button
-          component={Link} href={hrefs[selectedIndex]}
+          href={hrefs[selectedIndex]}
           color={colors[selectedIndex]} key={options[selectedIndex]}
         >
           {options[selectedIndex]}
