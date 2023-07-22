@@ -1,7 +1,7 @@
 import { useContext } from 'react';
-import Welcome from '../src/components/welcome/Welcome';
-import Navigation from '../src/components/navigation/Navigation';
-import Main from '../src/components/main/Main';
+//import Welcome from '../src/components/welcome/Welcome';
+//import Navigation from '../src/components/navigation/Navigation';
+//import Main from '../src/components/main/Main';
 import Copyright from './components/common/Copyright';
 
 import { motion } from 'framer-motion';
@@ -20,9 +20,16 @@ export default function App() {
 
   return (
     <>
+
+{/*
       <Welcome />
- 
+*/}
+
+
       {/* Використовуємо умовний оператор, щоб відображати Navigation тільки для малих екранів */}
+
+
+{/*
       {ctx.isSmall && (
         <Navigation
           initial="initial" animate="animate"
@@ -30,9 +37,14 @@ export default function App() {
           show={true} position={null} // Вкажіть позицію, якщо потрібно
         />
       )}
- 
+*/}
+
+{/*
       <Main />
- 
+*/}
+
+
+
        <Copyright />
     </>
   );
