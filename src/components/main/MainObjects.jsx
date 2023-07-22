@@ -5,10 +5,10 @@ import {
   TypographyHeader,
   TypographyParagraph,
 } from '../../common/TypographyVariants';
-import MainProductionGallery from './Objects/MainObjectsGallery';
-import MainProductionArray from './Objects/MainObjectsArray';
+import ObjectsGallery from './Objects/ObjectsGallery';
+import ObjectsArray from './Objects/ObjectsArray';
 
-const ProductionVariants = {
+const ObjectsVariants = {
   initial: { y: 150 },
   animate: { y: 0, transition: { type: 'spring', bounce: 0.4, duration: 2 } },
 };
@@ -17,7 +17,7 @@ const MotionProps = {
   initial: 'initial',
   whileInView: 'animate',
   viewport: { once: true },
-  variants: ProductionVariants,
+  variants: ObjectsVariants,
 };
 
 export default function MainObjects() {
@@ -26,20 +26,20 @@ export default function MainObjects() {
       sx={{ backgroundColor: '#F3F3F3' }}
       {...MotionProps}
       component={motion.div}
-      id="production" className="titlefix"
+      id="objects" className="titlefix"
     >
-      <TypographyHeader sx={{ pt: 5 }} {...MotionProps} component={motion.p}>
-        Наші об'єкти
+      <TypographyHeader sx={{ pt: 5 }} {...MotionProps} component={motion.p}>      
+        {"Наші об'єкти"}
       </TypographyHeader>
       <TypographyParagraph mt={5} {...MotionProps} component={motion.p}>
         Завод оснащений усім необхідним для сучасного виробництва обладнанням. 
 		Складальний цех дозволяє здійснювати виробництво та контрольне складання систем будь-якої складності.
       </TypographyParagraph>
       <Grid container>
-        <MainProductionGallery
-          images={MainProductionArray}
+        <ObjectsGallery
+          images={ObjectsArray}
           MotionProps={MotionProps}
-          ProductionVariants={ProductionVariants}
+          ProductionVariants={ObjectsVariants}
         />
       </Grid>
     </Grid>
