@@ -1,5 +1,5 @@
 import { Grid, Paper } from '@mui/material';
-import { TypographyParagraphNoMargin } from '../../../common/TypographyVariants';
+import { TypographyParagraphNoMargin } from '../../common/TypographyVariants';
 import MainContactsIcon from './MainContactsIcon';
 import { motion } from 'framer-motion';
 import { useState } from 'react';

@@ -1,5 +1,4 @@
 import { Grid, Box } from '@mui/material';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import InsertLinkRoundedIcon from '@mui/icons-material/InsertLinkRounded';
 
@@ -20,30 +19,25 @@ export default function MainProductionGallery(props) {
 
   return (
     <Grid mt={{ xs: 5 }} container justifyContent="center" alignItems="center">
-      {props.images.map((image) => {
-        return (
-          <Box
-            m={2}
-            {...MotionProps}
-            component={motion.div}
-            key={image.alt}
-            sx={{ display: 'inline-block' }}
-          >
-            <InsertLinkRoundedIcon
-              htmlColor="white"
-              key={image.alt}
-            />
+      {props.images.map((image) => (
+        <Box
+          m={2}
+          {...MotionProps}
+          component={motion.div}
+          key={image.alt}
+          sx={{ display: 'inline-block' }}
+        >
+          <InsertLinkRoundedIcon htmlColor="white" key={image.alt} />
 
-            <Image
-              src={image.src}
-              alt={image.alt}
-              width={550}
-              height={300}
-              key={image.src}
-            />
-          </Box>
-        );
-      })}
+          <img
+            src={image.src}
+            alt={image.alt}
+            width={550}
+            height={300}
+            key={image.src}
+          />
+        </Box>
+      ))}
     </Grid>
   );
 }

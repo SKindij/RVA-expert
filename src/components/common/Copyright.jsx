@@ -6,7 +6,7 @@ export default function Copyright() {
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '} 
       {'Tech Solutions '}
-      {'v.0.0.3 by SKindij '}
+      {'v.0.1.5 by SKindij '}
       {new Date().getFullYear()}.
     </Typography>
   );
