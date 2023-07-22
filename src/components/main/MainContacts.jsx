@@ -1,5 +1,5 @@
 import { Grid } from '@mui/material';
-import { TypographyHeader, TypographyParagraph } from '../../common/TypographyVariants';
+import { TypographyHeader, TypographyParagraph } from '../common/TypographyVariants';
 import MainContactsInfo from './Contacts/MainContactsInfo';
 import MainContactsArray from './Contacts/MainContactsArray';
 import { motion } from 'framer-motion';

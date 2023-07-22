@@ -1,7 +1,7 @@
 import { Grid, Button, Paper } from '@mui/material';
 
 import { useContext } from 'react';
-import { BreakpointsContext } from '../../../../context/breakpoints-context';
+import { BreakpointsContext } from '../breakpoints-context';
 import NavSplit from './NavSplit';
 
 export const buttons = [

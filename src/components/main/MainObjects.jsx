@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import {
   TypographyHeader,
   TypographyParagraph,
-} from '../../common/TypographyVariants';
+} from '../common/TypographyVariants';
 import ObjectsGallery from './Objects/ObjectsGallery';
 import ObjectsArray from './Objects/ObjectsArray';
 

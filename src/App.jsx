@@ -5,7 +5,7 @@ import Main from '../src/components/main/Main';
 import Copyright from './components/common/Copyright';
 
 import { motion } from 'framer-motion';
-import { BreakpointsContext } from '../src/context/breakpoints-context';
+import { BreakpointsContext } from './components/breakpoints-context';
 
 const appbarVariants = {
   initial: { y: -100 },

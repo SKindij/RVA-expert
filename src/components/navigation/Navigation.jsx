@@ -2,8 +2,8 @@ import { AppBar, Toolbar, Grid } from '@mui/material';
 import { useContext, useState, useEffect } from 'react';
 import { BreakpointsContext } from '../breakpoints-context';
 import NavLogo from './NavLogo';
-import NavLinks from './NavLinks/NavLinks';
-import NavButtons from './NavButtons/NavButtons';
+import NavLinks from './NavLinks';
+import NavButtons from './NavButtons';
 import NavDrawer from './NavDrawer';
 
 export default function Navigation(props) {
