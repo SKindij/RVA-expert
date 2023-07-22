@@ -1,5 +1,5 @@
 import { Grid, Button, Paper } from '@mui/material';
-import Link from '../common/Link';
+
 import { useContext } from 'react';
 import { BreakpointsContext } from '../../../../context/breakpoints-context';
 import NavSplit from './NavSplit';
@@ -28,7 +28,7 @@ export default function NavButtons() {
             <Grid item key={button.title}>
               <Button
                 variant="contained" color={button.color}
-                component={Link} noLinkStyle
+                noLinkStyle
                 href={button.href} key={button.title}
               >
                 {button.title}
