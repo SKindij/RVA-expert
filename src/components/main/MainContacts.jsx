@@ -29,26 +29,16 @@ export default function MainContacts() {
         </TypographyParagraph>
       </Grid>
 
-        <MainContactsInfo data={MainContactsArray} />
+      <MainContactsInfo data={MainContactsArray} />
 
+      {/* Новий контейнер з картинкою, розташований по центру */}
       <Grid item container justifyContent="center" my={5}>
-        <TypographyHeader sx={{ mx: 2 }} {...MotionProps} component={motion.p}>
-          Ви також можете знайти нас на карті
-        </TypographyHeader>
-      </Grid>
-      <Grid item {...MotionProps} component={motion.div} xs={12}>
-      <section
-          id="map__section"
-          style={{
-            width: '100%',
-            height: 450,
-          }}
-        >
+        <Grid item xs={12} sm={10} md={8} {...MotionProps} component={motion.div}>
           <img
-            src="/images/map_image.jpg" alt="Google Map"
-            width="100%" height="450"
+            src="/images/google-map.jpg" alt="Google Map"
+            width="100%" style={{ display: 'block' }}
           />
-        </section>
+        </Grid>
       </Grid>
     </Grid>
   );
