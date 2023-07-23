@@ -25,8 +25,9 @@ export default function MainContacts() {
         </TypographyHeader>
 
         <TypographyParagraph my={5} {...MotionProps} component={motion.p}>
-          Ви можете зв'язатися з нами способами, наведеними нижче. 
-		  Ми завжди на зв'язку!
+           Ви можете зв&apos;язатися з нами способами, наведеними нижче.
+           <br />
+           Ми завжди на зв&apos;язку!
         </TypographyParagraph>
       </Grid>
 
