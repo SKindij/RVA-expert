@@ -4,21 +4,21 @@ import MainGalleryBox from './Gallery/MainGalleryBox';
 import { MainGalleryWrapper } from './Gallery/MainGalleryWrapper';
 
 const images = [
-  { src: '/images/slider/ngm-slider-1.jpg' },
-  { src: '/images/slider/ngm-slider-2.jpg' },
-  { src: '/images/slider/ngm-slider-3.jpg' },
-  { src: '/images/slider/ngm-slider-4.jpg' },
-  { src: '/images/slider/ngm-slider-5.jpg' },
-  { src: '/images/slider/ngm-slider-6.jpg' },
+  { src: '/images/m-gallery/rva-gallery-1.jpg' },
+  { src: '/images/m-gallery/rva-gallery-2.jpg' },
+  { src: '/images/m-gallery/rva-gallery-3.jpg' },
+  { src: '/images/m-gallery/rva-gallery-4.jpg' },
+  { src: '/images/m-gallery/rva-gallery-5.jpg' },
+  { src: '/images/m-gallery/rva-gallery-6.jpg' },
 ];
 
 const images2 = [
-  { src: '/images/slider/ngm-slider-7.jpg' },
-  { src: '/images/slider/ngm-slider-8.jpg' },
-  { src: '/images/slider/ngm-slider-9.jpg' },
-  { src: '/images/slider/ngm-slider-10.jpg' },
-  { src: '/images/slider/ngm-slider-11.jpg' },
-  { src: '/images/slider/ngm-slider-12.jpg' },
+  { src: '/images/m-gallery/rva-gallery-7.jpg' },
+  { src: '/images/m-gallery/rva-gallery-8.jpg' },
+  { src: '/images/m-gallery/rva-gallery-9.jpg' },
+  { src: '/images/m-gallery/rva-gallery-10.jpg' },
+  { src: '/images/m-gallery/rva-gallery-11.jpg' },
+  { src: '/images/m-gallery/rva-gallery-12.jpg' },
 ];
 
 export default function MainGallery() {

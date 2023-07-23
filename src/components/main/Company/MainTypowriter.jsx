@@ -34,7 +34,7 @@ export default function MainTypowriter() {
             .typeString('<strong>RVA -</strong> Ролети. Ворота. Автоматика.')
               .pauseFor(1000)
               .deleteAll()
-            .typeString("Індивідуальний підхід до кожного об'єкту!")
+            .typeString("Індивідуальний підхід до кожного!")
               .pauseFor(1000)
               .deleteAll()
             .typeString('<strong>RVA.expert -</strong> Якість гарантовано!')
