@@ -7,11 +7,13 @@
 
 ```css
 RVA-expert/
+│
 ├─ index.html
 ├─ vite.config.js
 ├─ package.json
 ├─ .gitignore
 ├─ .eslintrc.cjs
+│
 ├─ public/
 │   ├─ site.webmanifest
 │   ├─ favicon.ico
@@ -20,51 +22,60 @@ RVA-expert/
 │   ├─ android-chrome-512x512.png
 │   ├─ favicon-16x16.png
 │   ├─ favicon-32x32.png
+│   │
 │   └─ images/
-│   │   ├─ rva.png
-│   │   ├─ background.jpg
-│   │   ├─ m-gallery/
-│   │   ├─ m-objects/
-│   │   ├─ m-staff/
-│   │   └─ products/
-└─ src/ 
-       ├─ main.jsx
-       ├─ style.css
-       ├─ theme.jsx
-       ├─ App.jsx
-       └─ components
-             ├─ breakpoints-context.jsx
-             ├─ common/
-             │   ├─ TypographyVariants.jsx
-             │   ├─ StyledImages.jsx
-             │   └─ Copyright.jsx
-             ├─ welcome/
-             │   ├─ Welcome.jsx
-             │   ├─ WelcomeBackground.jsx
-             │   ├─ WelcomeLogo.jsx
-             │   ├─ WelcomeCompany.jsx
-             │   ├─ WelcomeLine.jsx
-             │   ├─ WelcomeLinks.jsx
-             │   ├─ WelcomeButton.jsx
-             │   ├─ WelcomeParticles.jsx
-             ├─ navigation/
-             │   ├─ Navigation.jsx
-             │   ├─ NavLogo.jsx
-             │   ├─ NavLinks.jsx
-             │   ├─ NavButtons.jsx
-             │   ├─ NavDrawer.jsx
-             │   ├─ NavSplit.jsx
-             ├─ main/
-             │   ├─ Main.jsx
-             │   ├─ MainCompany.jsx
-             │   ├─ MainGallery.jsx
-             │   ├─ MainWhyUs.jsx
-             │   ├─ MainObjects.jsx
-             │   ├─ MainContacts.jsx
-             ├─ pages/
-             │   ├─ prices.jsx
-             │   ├─ products.jsx
-             └─└─ products/
+│      ├─ rva.png
+│      ├─ background.jpg
+│      │
+│      ├─ m-gallery/
+│      ├─ m-objects/
+│      ├─ m-staff/
+│      └─ products/
+│
+└─ src/
+   ├─ main.jsx
+   ├─ style.css
+   ├─ theme.jsx
+   ├─ App.jsx
+   │
+   └─ components
+      ├─ breakpoints-context.jsx
+      │
+      ├─ common/
+      │   ├─ TypographyVariants.jsx
+      │   ├─ StyledImages.jsx
+      │   └─ Copyright.jsx
+      │
+      ├─ welcome/
+      │   ├─ Welcome.jsx
+      │   ├─ WelcomeBackground.jsx
+      │   ├─ WelcomeLogo.jsx
+      │   ├─ WelcomeCompany.jsx
+      │   ├─ WelcomeLine.jsx
+      │   ├─ WelcomeLinks.jsx
+      │   ├─ WelcomeButton.jsx
+      │   └─ WelcomeParticles.jsx
+      │
+      ├─ navigation/
+      │   ├─ Navigation.jsx
+      │   ├─ NavLogo.jsx
+      │   ├─ NavLinks.jsx
+      │   ├─ NavButtons.jsx
+      │   ├─ NavDrawer.jsx
+      │   └─ NavSplit.jsx
+      │
+      ├─ main/
+      │   ├─ Main.jsx
+      │   ├─ MainCompany.jsx
+      │   ├─ MainGallery.jsx
+      │   ├─ MainWhyUs.jsx
+      │   ├─ MainObjects.jsx
+      │   └─ MainContacts.jsx
+      │
+      └─ pages/
+         ├─ prices.jsx
+         ├─ products.jsx
+         └─ products/
 ```
 
 
