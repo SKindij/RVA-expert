@@ -1,26 +1,26 @@
 export default [
   {
-    src: '/images/plant/plant-1.jpg',
+    src: '/images/m-objects/m-objects-1.jpg',
     alt: 'Проект 1',
   },
   {
-    src: '/images/plant/plant-2.jpg',
+    src: '/images/m-objects/m-objects-2.jpg',
     alt: 'Проект 2',
   },
   {
-    src: '/images/plant/plant-3.jpg',
+    src: '/images/m-objects/m-objects-3.jpg',
     alt: 'Проект 3',
   },
   {
-    src: '/images/plant/plant-4.jpg',
+    src: '/images/m-objects/m-objects-4.jpg',
     alt: 'Проект 4',
   },
   {
-    src: '/images/plant/plant-5.jpg',
+    src: '/images/m-objects/m-objects-5.jpg',
     alt: 'Проект 5',
   },
   {
-    src: '/images/plant/plant-6.jpg',
+    src: '/images/m-objects/m-objects-6.jpg',
     alt: 'Проект 6',
   },
 ];

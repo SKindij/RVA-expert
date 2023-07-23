@@ -10,12 +10,9 @@ export default function MainProductionGallery(props) {
   };
 
   const MotionProps = {
-    initial: 'initial',
-    whileInView: 'animate',
-    whileHover: 'hover',
-    whileTap: 'hover',
-    viewport: { once: true },
-    variants: ProductionVariants,
+    initial: 'initial',  whileInView: 'animate',
+    whileHover: 'hover', whileTap: 'hover',
+    viewport: { once: true }, variants: ProductionVariants,
   };
 
   return (
@@ -31,10 +28,8 @@ export default function MainProductionGallery(props) {
           <InsertLinkRoundedIcon htmlColor="white" key={image.alt} />
 
           <img
-            src={image.src}
-            alt={image.alt}
-            width={550}
-            height={300}
+            src={image.src} alt={image.alt}
+            width={550} height={300}
             key={image.src}
           />
         </Box>
