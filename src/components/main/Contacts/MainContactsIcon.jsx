@@ -4,13 +4,13 @@ import LocalPhoneRoundedIcon from '@mui/icons-material/LocalPhoneRounded';
 import MailRoundedIcon from '@mui/icons-material/MailRounded';
 
 export default function MainContactsIcon(props) {
-  return props.id === 'Полное Наименование' ? (
+  return props.id === 'Компанія' ? (
     <AccountBalanceRoundedIcon htmlColor={props.color} />
-  ) : props.id === 'Адрес' ? (
+  ) : props.id === 'Адреса' ? (
     <HomeIcon htmlColor={props.color} />
-  ) : props.id === 'Телефон / Факс' ? (
+  ) : props.id === 'Телефон' ? (
     <LocalPhoneRoundedIcon htmlColor={props.color} />
-  ) : props.id === 'Электронный Адрес' ? (
+  ) : props.id === 'Пошта' ? (
     <MailRoundedIcon htmlColor={props.color} />
   ) : null;
 }

@@ -1,7 +1,7 @@
-export default [
+const MainContactsArray = [
   {
-    title: 'Назва компаанії',
-    text: 'RVA.expert "Тех-Рішення"',
+    title: 'Компанія',
+    text: '"Тех-Рішення"',
   },
   {
     title: 'Адреса',
@@ -12,7 +12,8 @@ export default [
     text: '+38-099-888-77-33',
   },
   {
-    title: 'Електронна пошта',
+    title: 'Пошта',
     text: 'tech@rva.expert',
   },
 ];
+export default MainContactsArray;
