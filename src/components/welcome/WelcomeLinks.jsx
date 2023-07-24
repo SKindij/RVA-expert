@@ -9,7 +9,7 @@ const links = [
     href: '/#company',
   },
   {
-    title: 'Об\'єкти',
+    title: 'Проекти',
     href: '/#objects',
   },
   {
