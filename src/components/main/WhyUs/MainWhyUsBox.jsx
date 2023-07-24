@@ -79,7 +79,7 @@ export default function MainWhyUs(props) {
 
 // Валідація пропсів
 MainWhyUs.propTypes = {
-  componentId: PropTypes.string.isRequired,
+  componentId: PropTypes.number.isRequired,
   header: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };

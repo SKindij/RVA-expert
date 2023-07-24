@@ -1,10 +1,10 @@
-import WelcomeParticles from './WelcomeParticles';
-import WelcomeLogo from './WelcomeLogo';
-import WelcomeBackground from './WelcomeBackground';
-import WelcomeCompany from './WelcomeCompany';
-import WelcomeButton from './WelcomeButton';
-import WelcomeLine from './WelcomeLine';
-import WelcomeLinks from './WelcomeLinks';
+//import WelcomeParticles from './WelcomeParticles';
+//import WelcomeLogo from './WelcomeLogo';
+//import WelcomeBackground from './WelcomeBackground';
+//import WelcomeCompany from './WelcomeCompany';
+//import WelcomeButton from './WelcomeButton';
+//import WelcomeLine from './WelcomeLine';
+//import WelcomeLinks from './WelcomeLinks';
 
 import { useContext } from 'react';
 import { BreakpointsContext } from '../breakpoints-context';
@@ -22,24 +22,29 @@ export default function Welcome () {
   return (
     <>
       <Box
-        component={motion.div}
-        variants={containerVariants}
+        component={motion.div} variants={containerVariants}
         initial="initial" animate="animate"
       >
-        <WelcomeBackground>
+        <div className="welcome-background">
+
+    {/*
           <WelcomeParticles />
           <Grid
             container direction="column"
             sx={{ width: '100%', height: '100%' }}
           >
             <WelcomeLogo />
+
             <WelcomeLine />
-            <WelcomeCompany />
+              <WelcomeCompany />
             <WelcomeLine />
+
             {(ctx.isMedium || ctx.isLarge) && <WelcomeLinks />}
+
             <WelcomeButton />
           </Grid>
-        </WelcomeBackground>
+    */}
+        </div>
       </Box>
     </>
   );

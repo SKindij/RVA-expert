@@ -27,13 +27,11 @@ export default function WelcomeButton () {
   }, []);
 
   return (
-    <Grid
-      item xs={1}
+    <Grid item xs={1}
       component={motion.div} variants={arrowVariants}
       initial={{ y: '100vh' }} animate={animation}
       whileHover={{ scale: 1.4, y: 0, cursor: 'pointer' }}
-      fontSize="60px"
-      mt={{ xs: 25, sm: 25, md: 0 }}
+      fontSize="60px" mt={{ xs: 25, sm: 25, md: 0 }}
       sx={{ width: 'fit-content', margin: 'auto' }}
     >
       <Link href="/#company">

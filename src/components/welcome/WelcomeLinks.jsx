@@ -18,7 +18,7 @@ const links = [
   },
   {
     title: 'Продукція',
-    href: '/production',
+    href: '#',
   },
 ];
 
@@ -36,22 +36,21 @@ export default function WelcomeLinks () {
       className={classes.welcomeLinks}
       mt={{ xs: 8, md: 0 }}
     >
-      {links.map((link) => {
+      {links.map( (link) => {
         return (
           <Grid
-            item color="white"
+            item color="white" key={link.title}
             component={motion.div} variants={linksVariants}
-            sx={{ width: 'fit-content' }} marginX={{ xs: 15, sm: 1.5 }}
-            key={link.title}
+            sx={ { width: 'fit-content' }} marginX={{ xs: 15, sm: 1.5 } }           
           >
-            <Link href={link.href} sx={{ textDecoration: 'none' }} color="#FFF">
+            <Link href={link.href} sx={ { textDecoration: 'none' } } color="#FFF">
               <Typography fontSize={{ xs: '1.3rem', sm: '1.5rem' }}>
                 {link.title}
               </Typography>
             </Link>
           </Grid>
         );
-      })}
+      } )}
     </Grid>
   );
 }

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Grid } from '@mui/material';
-import WelcomeLogoImage from './WelcomeLogoImage';
+import { styled } from '@mui/material/styles';
 
 const logoVariants = {
   initial: {
@@ -12,7 +12,20 @@ const logoVariants = {
   },
 };
 
-export default function WelcomeLogo () {
+const StyledLogoImage = styled('img')(({ theme }) => ({
+  boxSizing: 'border-box', borderRadius: '15px',
+  [theme.breakpoints.up('md')]: {
+    height: '300px',
+  },
+  [theme.breakpoints.between('sm', 'md')]: {
+    height: '250px',
+  },
+  [theme.breakpoints.between('xs', 'sm')]: {
+    height: '160px',
+  },
+}));
+
+export default function WelcomeLogo() {
   return (
     <Grid
       item container justifyContent="center"
@@ -21,7 +34,7 @@ export default function WelcomeLogo () {
       mt={{ xs: 3 }}
       mb={{ xs: 15, sm: 9, md: 2 }}
     >
-      <WelcomeLogoImage component="img" src="/images/rva.jpg" alt="RVA expert logo" />
+      <StyledLogoImage src="/images/rva.jpg" alt="RVA expert logo" />
     </Grid>
   );
 }

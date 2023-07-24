@@ -26,8 +26,7 @@ export default function WelcomeCompany() {
   return (
     <Grid item container xs={1} alignItems="center" justifyContent="center">
       <Typography
-        align="center"
-        variant="h1" color="white"
+        align="center" variant="h1" color="white"
         fontSize={{ xs: '1.7rem', sm: '3rem' }}
         sx={{ zIndex: 'modal', fontWeight: 900 }}
         variants={companyVariants} animate={animation}
