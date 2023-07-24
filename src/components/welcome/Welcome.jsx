@@ -1,5 +1,5 @@
 //import WelcomeParticles from './WelcomeParticles';
-//import WelcomeLogo from './WelcomeLogo';
+import WelcomeLogo from './WelcomeLogo';
 //import WelcomeBackground from './WelcomeBackground';
 //import WelcomeCompany from './WelcomeCompany';
 //import WelcomeButton from './WelcomeButton';
@@ -29,12 +29,14 @@ export default function Welcome () {
 
     {/*
           <WelcomeParticles />
+    */}
           <Grid
             container direction="column"
             sx={{ width: '100%', height: '100%' }}
           >
-            <WelcomeLogo />
 
+            <WelcomeLogo />
+    {/*
             <WelcomeLine />
               <WelcomeCompany />
             <WelcomeLine />
@@ -42,8 +44,9 @@ export default function Welcome () {
             {(ctx.isMedium || ctx.isLarge) && <WelcomeLinks />}
 
             <WelcomeButton />
-          </Grid>
     */}
+          </Grid>
+    
         </div>
       </Box>
     </>
