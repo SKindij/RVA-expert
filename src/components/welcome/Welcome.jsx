@@ -3,7 +3,7 @@ import WelcomeLogo from './WelcomeLogo';
 import WelcomeCompany from './WelcomeCompany';
 //import WelcomeButton from './WelcomeButton';
 import WelcomeLine from './WelcomeLine';
-//import WelcomeLinks from './WelcomeLinks';
+import WelcomeLinks from './WelcomeLinks';
 
 import { useContext } from 'react';
 import { BreakpointsContext } from '../breakpoints-context';
@@ -33,15 +33,14 @@ export default function Welcome () {
             container direction="column"
             sx={{ width: '100%', height: '100%' }}
           >
-
             <WelcomeLogo />
-    
+
             <WelcomeLine />
               <WelcomeCompany />
             <WelcomeLine />
-    {/*
-            {(ctx.isMedium || ctx.isLarge) && <WelcomeLinks />}
     
+            {(ctx.isMedium || ctx.isLarge) && <WelcomeLinks />}
+    {/*
             <WelcomeButton />
     */}
           </Grid>
