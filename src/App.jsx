@@ -1,4 +1,4 @@
-
+import { BreakpointsContextProvider } from './components/breakpoints-context';
 import { useContext } from 'react';
 import Welcome from '../src/components/welcome/Welcome';
 //import Navigation from '../src/components/navigation/Navigation';
@@ -20,6 +20,7 @@ export default function App() {
   const ctx = useContext(BreakpointsContext);
 
   return (
+    <BreakpointsContextProvider>
     <>
       <Welcome />
 
@@ -36,5 +37,6 @@ export default function App() {
       <Main />
       <Copyright />
     </>
+    </BreakpointsContextProvider>
   );
 }
