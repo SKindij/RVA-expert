@@ -1,7 +1,7 @@
 import WelcomeParticles from './WelcomeParticles';
 import WelcomeLogo from './WelcomeLogo';
 import WelcomeCompany from './WelcomeCompany';
-//import WelcomeButton from './WelcomeButton';
+import WelcomeButton from './WelcomeButton';
 import WelcomeLine from './WelcomeLine';
 import WelcomeLinks from './WelcomeLinks';
 
@@ -40,9 +40,9 @@ export default function Welcome () {
             <WelcomeLine />
     
             {(ctx.isMedium || ctx.isLarge) && <WelcomeLinks />}
-    {/*
+
             <WelcomeButton />
-    */}
+
           </Grid>
     
         </div>
