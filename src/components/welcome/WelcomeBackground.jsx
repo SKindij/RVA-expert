@@ -1,5 +1,5 @@
-function Card(props) {
+function WelcomeBackground(props) {
   return <div className="welcome-background">{props.children}</div>;
 }
 
-export default Card;
+export default WelcomeBackground;

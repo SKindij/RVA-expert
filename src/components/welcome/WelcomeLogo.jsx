@@ -15,16 +15,13 @@ const logoVariants = {
 export default function WelcomeLogo () {
   return (
     <Grid
-      item
-      container
-      justifyContent="center"
-      variants={logoVariants}
-      component={motion.div}
+      item container justifyContent="center"
+      variants={logoVariants} component={motion.div}
       xs={2}
       mt={{ xs: 3 }}
       mb={{ xs: 15, sm: 9, md: 2 }}
     >
-      <WelcomeLogoImage component="img" src="/images/rva.png" alt="RVA expert logo" />
+      <WelcomeLogoImage component="img" src="/images/rva.jpg" alt="RVA expert logo" />
     </Grid>
   );
 }

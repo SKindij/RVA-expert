@@ -24,11 +24,7 @@ export default function App() {
 {/*
       <Welcome />
 */}
-
-
       {/* Використовуємо умовний оператор, щоб відображати Navigation тільки для малих екранів */}
-
-
 {/*
       {ctx.isSmall && (
         <Navigation
@@ -38,10 +34,8 @@ export default function App() {
         />
       )}
 */}
-
       <Main />
-
-       <Copyright />
+      <Copyright />
     </>
   );
 }
