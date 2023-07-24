@@ -1,9 +1,8 @@
-//import WelcomeParticles from './WelcomeParticles';
+import WelcomeParticles from './WelcomeParticles';
 import WelcomeLogo from './WelcomeLogo';
-//import WelcomeBackground from './WelcomeBackground';
-//import WelcomeCompany from './WelcomeCompany';
+import WelcomeCompany from './WelcomeCompany';
 //import WelcomeButton from './WelcomeButton';
-//import WelcomeLine from './WelcomeLine';
+import WelcomeLine from './WelcomeLine';
 //import WelcomeLinks from './WelcomeLinks';
 
 import { useContext } from 'react';
@@ -27,22 +26,22 @@ export default function Welcome () {
       >
         <div className="welcome-background">
 
-    {/*
+    
           <WelcomeParticles />
-    */}
+    
           <Grid
             container direction="column"
             sx={{ width: '100%', height: '100%' }}
           >
 
             <WelcomeLogo />
-    {/*
+    
             <WelcomeLine />
               <WelcomeCompany />
             <WelcomeLine />
-
+    {/*
             {(ctx.isMedium || ctx.isLarge) && <WelcomeLinks />}
-
+    
             <WelcomeButton />
     */}
           </Grid>

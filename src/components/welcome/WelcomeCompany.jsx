@@ -10,8 +10,7 @@ const companyVariants = {
     transition: { type: 'spring', bounce: 0.5, duration: 6 },
   },
   animationTwo: {
-    rotateY: 0,
-    scale: 1.3,
+    rotateY: 0, scale: 1.3,
     transition: { duration: 1.5 },
   },
 };
@@ -32,7 +31,7 @@ export default function WelcomeCompany() {
         variants={companyVariants} animate={animation}
         component={motion.p} initial="initial"
       >
-        Тех-Рішення
+        Компанія Тех-Рішення
       </Typography>
     </Grid>
   );
