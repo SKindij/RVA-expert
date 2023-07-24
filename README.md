@@ -48,7 +48,6 @@ RVA-expert/
       │
       ├─ welcome/
       │   ├─ Welcome.jsx
-      │   ├─ WelcomeBackground.jsx
       │   ├─ WelcomeLogo.jsx
       │   ├─ WelcomeCompany.jsx
       │   ├─ WelcomeLine.jsx
