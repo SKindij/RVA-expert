@@ -3,7 +3,7 @@ import Navigation from '../src/components/Navigation/Navigation';
 import { TypographyHeader } from '../src/components/common/TypographyVariants';
 import { Helmet } from 'react-helmet';
 
-function Calculator() {
+function CalculatorPage() {
   return (
     <>
       <Helmet>
@@ -23,4 +23,4 @@ function Calculator() {
   );
 }
 
-export default Calculator;
+export default CalculatorPage;

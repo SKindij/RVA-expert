@@ -64,7 +64,7 @@ RVA-expert/
       │   └─ NavSplit.jsx
       │
       ├─ main/
-      │   ├─ Main.jsx
+      │   ├─ MainPage.jsx
       │   ├─ MainCompany.jsx
       │   ├─ MainGallery.jsx
       │   ├─ MainWhyUs.jsx
@@ -72,8 +72,8 @@ RVA-expert/
       │   └─ MainContacts.jsx
       │
       └─ pages/
-         ├─ prices.jsx
-         ├─ products.jsx
+         ├─ CalculatorPage.jsx
+         ├─ productsPage.jsx
          └─ products/
 ```
 

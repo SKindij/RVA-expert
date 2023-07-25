@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from '../src/components/Navigation/Navigation';
 import Production from '../src/components/Production/Production';
 
-function ProductionPage() {
+function ProductsPage() {
   return (
     <>
       <Navigation show={true} />
@@ -11,4 +11,4 @@ function ProductionPage() {
   );
 }
 
-export default ProductionPage;
+export default ProductsPage;
