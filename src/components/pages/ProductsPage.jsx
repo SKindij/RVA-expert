@@ -1,7 +1,8 @@
-import { TypographyHeader } from '../common/TypographyVariants';
+import { TypographyHeader, TypographyParagraph } from '../common/TypographyVariants';
 import { Helmet } from 'react-helmet';
 import Navigation from '../navigation/Navigation';
 //import Rolets from './products/Rolets';
+//import Gatess from './products/Gates';
 
 function ProductsPage() {
   return (
@@ -17,11 +18,16 @@ function ProductsPage() {
       </Helmet>
       <Navigation show={true} />
       <TypographyHeader sx={{ color: '#000', mt: 10 }}>
-        Шановні клієнти!
+        Шановні клієнти!<br/>
+        Незабаром тут буде відображатися перелік нашої продукції.
+        
       </TypographyHeader>
-      <TypographyHeader sx={{ color: '#000', mt: 10 }}>
-        Незабаром тут буде відображатися перелік нашою продукції.
-      </TypographyHeader>
+      <TypographyParagraph
+        mt={5} 
+      >
+        Секційні ворота. Захисні ролети.<br/>
+        Автоматика для розпашних та відкатних воріт.
+      </TypographyParagraph>
     </>
   );
 }

@@ -17,9 +17,7 @@ function CalculatorPage() {
       </Helmet>
       <Navigation show={true} />
       <TypographyHeader sx={{ color: '#000', mt: 10 }}>
-        Шановні клієнти!
-      </TypographyHeader>
-      <TypographyHeader sx={{ color: '#000', mt: 10 }}>
+        Шановні клієнти!<br/>
         Сторінка з калькулятором цін на даний момент знаходиться у розробці!
       </TypographyHeader>
     </>
