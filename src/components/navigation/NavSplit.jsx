@@ -10,7 +10,7 @@ import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 
 const options = ['Розрахунок цін', 'Продукція'];
-const hrefs = ['/calculator', '/production'];
+const hrefs = ['/calculator', '/products'];
 const colors = ['secondary', 'primary'];
 
 export default function SplitButton() {
