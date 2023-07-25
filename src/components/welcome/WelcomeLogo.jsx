@@ -34,7 +34,7 @@ export default function WelcomeLogo() {
       mt={{ xs: 3 }}
       mb={{ xs: 15, sm: 9, md: 2 }}
     >
-      <StyledLogoImage src="/images/rva.jpg" alt="RVA expert logo" />
+      <StyledLogoImage src="/images/rva.png" alt="RVA expert logo" />
     </Grid>
   );
 }
