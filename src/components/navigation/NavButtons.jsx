@@ -1,12 +1,12 @@
-import { Grid, Button, Paper } from '@mui/material';
-
+import { Grid, Button } from '@mui/material';
+import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { BreakpointsContext } from '../breakpoints-context';
 import NavSplit from './NavSplit';
 
 export const buttons = [
   {
-    href: '/production',
+    href: '/products',
     title: 'Продукція',
     color: 'primary',
   },
@@ -23,19 +23,19 @@ export default function NavButtons() {
   return (
     <>
       {ctx.isLarge &&
-        buttons.map((button) => {
+        buttons.map( (button) => {
           return (
             <Grid item key={button.title}>
               <Button
+                component={Link} to={button.href}
                 variant="contained" color={button.color}
-                noLinkStyle
-                href={button.href} key={button.title}
+                key={button.title}
               >
                 {button.title}
               </Button>
             </Grid>
           );
-        })}
+        } )}
       {ctx.isMedium && <NavSplit />}
     </>
   );

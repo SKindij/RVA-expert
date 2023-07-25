@@ -16,15 +16,29 @@ export const links = [
   },
 ];
 
+const scrollToElement = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 
 export default function NavLinks() {
+  const onClickHandler = (event, id) => {
+    event.preventDefault();
+    if (id) {
+      scrollToElement(id);
+    }
+  };
+
   return links.map( (link) => {
     return (
       <Grid item key={link.title}>
         <Button
           variant="text" // Можна вибрати "outlined" або "contained"
           sx={{ color: 'black' }}
-          href={link.id}
+          href={'/'}
+          onClick={(event) => onClickHandler(event, link.id)}
         >
           <Typography
             variant="overline" component={motion.p}
