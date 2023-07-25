@@ -15,13 +15,13 @@ const logoVariants = {
 const StyledLogoImage = styled('img')(({ theme }) => ({
   boxSizing: 'border-box', borderRadius: '15px',
   [theme.breakpoints.up('md')]: {
-    height: '250px',
-  },
-  [theme.breakpoints.between('sm', 'md')]: {
     height: '200px',
   },
-  [theme.breakpoints.between('xs', 'sm')]: {
+  [theme.breakpoints.between('sm', 'md')]: {
     height: '160px',
+  },
+  [theme.breakpoints.between('xs', 'sm')]: {
+    height: '120px',
   },
 }));
 
@@ -32,7 +32,7 @@ export default function WelcomeLogo() {
       variants={logoVariants} component={motion.div}
       xs={2}
       mt={{ xs: 3 }}
-      mb={{ xs: 15, sm: 9, md: 2 }}
+      mb={{ xs: 15, sm: 9, md: 6 }}
     >
       <StyledLogoImage src="/images/rva.png" alt="RVA expert logo" />
     </Grid>

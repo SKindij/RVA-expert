@@ -3,37 +3,42 @@ import { motion } from 'framer-motion';
 
 export const links = [
   {
-    href: '/#company',
-    text: 'Компанія',
+    title: 'Компанія',
+    id: 'company',
   },
   {
-    href: '/#objects',
-    text: 'Об\'єкти',
+    title: 'Проекти',
+    id: 'objects',
   },
   {
-    href: '/#contacts',
-    text: 'Контакти',
+    title: 'Контакти',
+    id: 'contacts',
   },
 ];
 
+
+
+
+
+
 export default function NavLinks() {
-  return links.map((link) => {
+  return links.map( (link) => {
     return (
-      <Grid item key={link.text}>
+      <Grid item key={link.title}>
         <Button
-          variant="text"
-          noLinkStyle sx={{ color: 'black' }}
-          href={link.href}
+          variant="text" // Можна вибрати "outlined" або "contained"
+          sx={{ color: 'black' }}
+          href={link.id}
         >
           <Typography
             variant="overline" component={motion.p}
             whileHover={{ color: '#ffc45a' }}
             sx={{ fontSize: '1rem' }}
           >
-            {link.text}
+            {link.title}
           </Typography>
         </Button>
       </Grid>
     );
-  });
+  } );
 }

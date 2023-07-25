@@ -23,7 +23,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   justifyContent: 'flex-start',
 }));
 
-export default function PersistentDrawerRight() {
+export default function NavDrawer() {
   let drawerWidth;
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -32,7 +32,6 @@ export default function PersistentDrawerRight() {
     drawerWidth = 240;
     setOpen(true);
   };
-
   const handleDrawerClose = () => {
     drawerWidth = 0;
     setOpen(false);
@@ -42,15 +41,13 @@ export default function PersistentDrawerRight() {
     <>
       <Drawer
         sx={{
-          width: drawerWidth,
-          flexShrink: 0,
+          width: drawerWidth, flexShrink: 0,
           '& .MuiDrawer-paper': {
             width: drawerWidth,
           },
         }}
         variant="persistent"
-        anchor="right"
-        open={open}
+        anchor="right" open={open}
       >
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
@@ -63,7 +60,7 @@ export default function PersistentDrawerRight() {
         </DrawerHeader>
         <Divider />
         <List>
-          {links.map((link, index) => (
+          {links.map( (link, index) => (
             <ListItem
               button
               key={link.text}
@@ -80,11 +77,11 @@ export default function PersistentDrawerRight() {
               </ListItemIcon>
               <ListItemText primary={link.text} />
             </ListItem>
-          ))}
+          ) )}
         </List>
         <Divider />
         <List>
-          {buttons.map((button, index) => (
+          {buttons.map( (button, index) => (
             <ListItem
               button
               key={button.title}
@@ -99,7 +96,7 @@ export default function PersistentDrawerRight() {
               </ListItemIcon>
               <ListItemText primary={button.title} />
             </ListItem>
-          ))}
+          ) )}
         </List>
       </Drawer>
       <Grid item>
