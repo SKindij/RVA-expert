@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { AppBar, Toolbar, Grid } from '@mui/material';
 import { useContext, useState, useEffect } from 'react';
 import { BreakpointsContext } from '../breakpoints-context';
@@ -7,10 +8,7 @@ import NavButtons from './NavButtons';
 import NavDrawer from './NavDrawer';
 
 export default function Navigation(props) {
-  const { initial } = props;
-  const { animate } = props;
-  const { variants } = props;
-  const { component } = props;
+  const { initial, animate, variants, component } = props;
   const ctx = useContext(BreakpointsContext);
 
   const [showNav, setShowNav] = useState(false);
@@ -26,12 +24,10 @@ export default function Navigation(props) {
       if (props.show === true) {
         setShowNav(true);
       }
-
       window.addEventListener('scroll', handleScroll);
       if (scrollPosition > 900) {
         setShowNav(true);
       }
-
       return () => {
         window.removeEventListener('scroll', handleScroll);
       };
@@ -42,8 +38,7 @@ export default function Navigation(props) {
     showNav && (
       <AppBar
         sx={{ bgcolor: 'white', height: '5rem', zIndex: 10000 }}
-        position="sticky" color="primary"
-        my={1}
+        position="sticky" color="primary" my={1}
         initial={initial ? initial : null}
         animate={animate ? animate : null}
         variants={variants ? variants : null}
@@ -99,3 +94,11 @@ export default function Navigation(props) {
     )
   );
 }
+
+Navigation.propTypes = {
+  initial: PropTypes.string, // initial буде строкою
+  animate: PropTypes.string, // animate буде строкою
+  variants: PropTypes.object, // variants буде об'єктом
+  component: PropTypes.elementType, // component приймає значення типу React компоненту
+  show: PropTypes.bool
+};
