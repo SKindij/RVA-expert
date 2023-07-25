@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Navigation from '../src/components/Navigation/Navigation';
 import { TypographyHeader } from '../src/components/common/TypographyVariants';
 import { Helmet } from 'react-helmet';

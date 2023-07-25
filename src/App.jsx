@@ -20,8 +20,10 @@ export default function App() {
   return (
     <BreakpointsContextProvider>
     <>
-    {/* умовним оператором відображаємо Navigation не для малих екранів */}
-    {!ctx.isSmall && (
+    
+      <Welcome />
+      {/* умовним оператором відображаємо Navigation не для малих екранів */}
+      {!ctx.isSmall && (
         <Navigation
           initial="initial" animate="animate"
           variants={appbarVariants} component={motion.div}
@@ -29,8 +31,6 @@ export default function App() {
           position={null} // Вкажіть позицію, якщо потрібно
         />
       )}
-
-      <Welcome />
       <Main />
       <Copyright />
 
