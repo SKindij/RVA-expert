@@ -9,6 +9,7 @@
 RVA-expert/
 │
 ├─ index.html
+│
 ├─ vite.config.js
 ├─ package.json
 ├─ .gitignore
@@ -36,6 +37,7 @@ RVA-expert/
    ├─ main.jsx
    ├─ style.css
    ├─ theme.jsx
+   │
    ├─ App.jsx
    │
    └─ components
@@ -44,10 +46,12 @@ RVA-expert/
       ├─ common/
       │   ├─ TypographyVariants.jsx
       │   ├─ StyledImages.jsx
+      │   │
       │   └─ Copyright.jsx
       │
       ├─ welcome/
       │   ├─ Welcome.jsx
+      │   │
       │   ├─ WelcomeLogo.jsx
       │   ├─ WelcomeCompany.jsx
       │   ├─ WelcomeLine.jsx
@@ -57,6 +61,7 @@ RVA-expert/
       │
       ├─ navigation/
       │   ├─ Navigation.jsx
+      │   │
       │   ├─ NavLogo.jsx
       │   ├─ NavLinks.jsx
       │   ├─ NavButtons.jsx
@@ -65,6 +70,7 @@ RVA-expert/
       │
       ├─ main/
       │   ├─ MainPage.jsx
+      │   │
       │   ├─ MainCompany.jsx
       │   ├─ MainGallery.jsx
       │   ├─ MainWhyUs.jsx
@@ -73,7 +79,7 @@ RVA-expert/
       │
       └─ pages/
          ├─ CalculatorPage.jsx
-         ├─ productsPage.jsx
+         ├─ ProductsPage.jsx
          └─ products/
 ```
 
