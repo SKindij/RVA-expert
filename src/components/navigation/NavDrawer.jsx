@@ -62,8 +62,8 @@ export default function NavDrawer() {
           {links.map( (link, index) => (
             <ListItem
               button
-              key={link.text}
-              href={link.href} onClick={handleDrawerClose}
+              key={link.title}
+              href={link.id} onClick={handleDrawerClose}
             >
               <ListItemIcon>
                 {index === 0 ? (
@@ -74,7 +74,7 @@ export default function NavDrawer() {
                   <MailIcon />
                 ) : null}
               </ListItemIcon>
-              <ListItemText primary={link.text} />
+              <ListItemText primary={link.title} />
             </ListItem>
           ) )}
         </List>

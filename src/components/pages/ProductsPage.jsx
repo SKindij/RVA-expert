@@ -1,6 +1,6 @@
 import React from 'react';
-import Navigation from '../src/components/Navigation/Navigation';
-import Production from '../src/components/Production/Production';
+import Navigation from '../navigation/Navigation';
+import Production from './products/Rolets';
 
 function ProductsPage() {
   return (

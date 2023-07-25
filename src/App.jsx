@@ -2,7 +2,7 @@ import { BreakpointsContextProvider } from './components/breakpoints-context';
 import { useContext } from 'react';
 import Welcome from '../src/components/welcome/Welcome';
 import Navigation from '../src/components/navigation/Navigation';
-import Main from '../src/components/main/Main';
+import Main from './components/main/MainPage';
 import Copyright from './components/common/Copyright';
 import { motion } from 'framer-motion';
 import { BreakpointsContext } from './components/breakpoints-context';

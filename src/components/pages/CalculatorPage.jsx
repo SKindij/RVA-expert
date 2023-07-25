@@ -1,6 +1,6 @@
 
-import Navigation from '../src/components/Navigation/Navigation';
-import { TypographyHeader } from '../src/components/common/TypographyVariants';
+import Navigation from '../navigation/Navigation';
+import { TypographyHeader } from '../common/TypographyVariants';
 import { Helmet } from 'react-helmet';
 
 function CalculatorPage() {
@@ -17,7 +17,10 @@ function CalculatorPage() {
       </Helmet>
       <Navigation show={true} />
       <TypographyHeader sx={{ color: '#000', mt: 10 }}>
-        Шановні клієнти! Сторінка з калькулятором цін на даний момент знаходиться у розробці!
+        Шановні клієнти!
+      </TypographyHeader>
+      <TypographyHeader sx={{ color: '#000', mt: 10 }}>
+        Сторінка з калькулятором цін на даний момент знаходиться у розробці!
       </TypographyHeader>
     </>
   );
