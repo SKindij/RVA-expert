@@ -7,7 +7,7 @@ function CalculatorPage() {
   return (
     <>
       <Helmet>
-        <title>Калькулятор цін</title>
+        <title>RVA Калькулятор цін</title>
         <meta name="description"
           content="Якщо Вам потрібен індивідуальний підхід при виконанні замовлення, то ви прийшли в потрібне місце!"
         />

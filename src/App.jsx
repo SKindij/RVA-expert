@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react';
 import { BreakpointsContextProvider } from './components/breakpoints-context';
 import { useContext } from 'react';
 import Welcome from '../src/components/welcome/Welcome';
@@ -6,6 +7,9 @@ import Main from './components/main/MainPage';
 import Copyright from './components/common/Copyright';
 import { motion } from 'framer-motion';
 import { BreakpointsContext } from './components/breakpoints-context';
+// Імпорт сторінок
+const ProductsPage = lazy(() => import('./components/pages/ProductsPage'));
+const CalculatorPage = lazy(() => import('./components/pages/CalculatorPage'));
 
 const appbarVariants = {
   initial: { y: -100 },
