@@ -18,7 +18,7 @@ const appbarVariants = {
   },
 };
 
-export default function Main() {
+export default function MainPage() {
   const ctx = useContext(BreakpointsContext);
   return (
     <>

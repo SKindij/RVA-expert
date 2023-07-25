@@ -50,7 +50,6 @@ export default function Navigation(props) {
             height="100%"
           >
             <NavLogo />
-
             {/* Mobile */}
             {ctx.isSmall && (
               <Grid
@@ -60,22 +59,20 @@ export default function Navigation(props) {
                 <NavDrawer />
               </Grid>
             )}
-
             {/* Non-Mobile */}
             {ctx.isMedium || ctx.isLarge ? (
               <Grid item container justifyContent="center" 
-              alignItems="center" spacing={3}>
-                <NavLinks />
+              alignItems="center" spacing={3}
+              >
+                  <NavLinks />
               </Grid>
             ) : null}
-
             {ctx.isMedium || ctx.isLarge ? (
               <Grid
-                item container
-                justifyContent="center"
+                item container justifyContent="center"
                 spacing={1} md={5} wrap="nowrap"
               >
-                <NavButtons />
+                  <NavButtons />
               </Grid>
             ) : null}
           </Grid>

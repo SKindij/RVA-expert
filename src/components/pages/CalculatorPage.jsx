@@ -1,9 +1,17 @@
-
+//потрібно додати збереження стану завантаження для лінивого компонента
+import { useState, useEffect } from 'react';
+//import { lazy, Suspense } from 'react';
 import Navigation from '../navigation/Navigation';
 import { TypographyHeader } from '../common/TypographyVariants';
 import { Helmet } from 'react-helmet';
 
 function CalculatorPage() {
+  const [navigationLoaded, setNavigationLoaded] = useState(false);
+  useEffect(() => {
+    // При завантаженні компонента ProductsPage позначаємо, що навігація завантажилась
+    setNavigationLoaded(true);
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -15,7 +23,8 @@ function CalculatorPage() {
           content="секційні ворота, розпашна автомаатика, ролові ворота, відкатний двигун, віконна ролет, шлагбаум,
               устаановка воріт, монтаж автоматики, установка ролет, радіоприймач" />
       </Helmet>
-      <Navigation show={true} />
+      {/* Перевіряємо, чи завантажилась навігація перед її рендерингом */}
+      {navigationLoaded && <Navigation show={true} />}
       <TypographyHeader sx={{ color: '#000', mt: 10 }}>
         Шановні клієнти!<br/>
         Сторінка з калькулятором цін на даний момент знаходиться у розробці!
