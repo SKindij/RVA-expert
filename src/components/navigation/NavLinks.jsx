@@ -17,10 +17,6 @@ export const links = [
 ];
 
 
-
-
-
-
 export default function NavLinks() {
   return links.map( (link) => {
     return (

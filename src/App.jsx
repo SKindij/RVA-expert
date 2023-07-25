@@ -24,7 +24,7 @@ export default function App() {
 
       {/* Використовуємо умовний оператор, щоб відображати Navigation тільки для малих екранів */}
 
-      {ctx.isSmall && (
+      {!ctx.isSmall && (
         <Navigation
           initial="initial" animate="animate"
           variants={appbarVariants} component={motion.div}

@@ -21,11 +21,9 @@ export default function Navigation(props) {
         setShowNav(false);
       }
     };
-
     if (show) {
       setShowNav(true);
     }
-
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -56,9 +54,7 @@ export default function Navigation(props) {
             {/* Mobile */}
             {ctx.isSmall && (
               <Grid
-                container
-                item
-                justifyContent="flex-end"
+                container item justifyContent="flex-end"
                 sx={{ marginRight: '2rem' }}
               >
                 <NavDrawer />
@@ -67,19 +63,17 @@ export default function Navigation(props) {
 
             {/* Non-Mobile */}
             {ctx.isMedium || ctx.isLarge ? (
-              <Grid item container justifyContent="center" alignItems="center" spacing={3}>
+              <Grid item container justifyContent="center" 
+              alignItems="center" spacing={3}>
                 <NavLinks />
               </Grid>
             ) : null}
 
             {ctx.isMedium || ctx.isLarge ? (
               <Grid
-                item
-                container
+                item container
                 justifyContent="center"
-                spacing={1}
-                md={5}
-                wrap="nowrap"
+                spacing={1} md={5} wrap="nowrap"
               >
                 <NavButtons />
               </Grid>
