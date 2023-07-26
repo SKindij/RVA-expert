@@ -5,7 +5,7 @@ import Navigation from '../navigation/Navigation';
 import { TypographyHeader } from '../common/TypographyVariants';
 import { Helmet } from 'react-helmet';
 
-function CalculatorPage() {
+function GatesPage() {
   const [navigationLoaded, setNavigationLoaded] = useState(false);
   useEffect(() => {
     // При завантаженні компонента ProductsPage позначаємо, що навігація завантажилась
@@ -15,7 +15,7 @@ function CalculatorPage() {
   return (
     <>
       <Helmet>
-        <title>RVA Калькулятор цін</title>
+        <title>RVA Секційні ворота</title>
         <meta name="description"
           content="Якщо Вам потрібен індивідуальний підхід при виконанні замовлення, то ви прийшли в потрібне місце!"
         />
@@ -27,10 +27,10 @@ function CalculatorPage() {
       {navigationLoaded && <Navigation show={true} />}
       <TypographyHeader sx={{ color: '#000', mt: 10 }}>
         Шановні клієнти!<br/>
-        Сторінка з калькулятором цін на даний момент знаходиться у розробці!
+        Сторінка із рзноманіттям секційних воріт на даний момент знаходиться у розробці!
       </TypographyHeader>
     </>
   );
 }
 
-export default CalculatorPage;
+export default GatesPage;

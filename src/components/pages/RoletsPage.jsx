@@ -8,7 +8,7 @@ import Navigation from '../navigation/Navigation';
 //const Rolets = lazy(() => import('./products/Rolets'));
 //const Gatess = lazy(() => import('./products/Gates'));
 
-function ProductsPage() {
+function RoletsPage() {
   const [navigationLoaded, setNavigationLoaded] = useState(false);
   useEffect(() => {
     // При завантаженні ProductsPage позначаємо, що навігація завантажилась
@@ -18,7 +18,7 @@ function ProductsPage() {
   return (
     <>
       <Helmet>
-        <title>RVA Продукція</title>
+        <title>RVA Захисні ролети</title>
         <meta name="description"
           content="Якщо Вам потрібен індивідуальний підхід при виконанні замовлення, то ви прийшли в потрібне місце!"
         />
@@ -42,11 +42,11 @@ function ProductsPage() {
       <TypographyParagraph
         mb={15} 
       >
-        Секційні ворота. Захисні ролети.<br/>
-        Автоматика для розпашних та відкатних воріт.
+        Захисні ролети.<br/>
+        Ролові ворота.
       </TypographyParagraph>
     </>
   );
 }
 
-export default ProductsPage;
+export default RoletsPage;
