@@ -1,18 +1,18 @@
 // components/navigation/NavDrawer.jsx
 import * as React from 'react';
-import {
-  Grid, Divider, IconButton, List, ListItem, ListItemIcon, ListItemText, Drawer,
-} from '@mui/material';
+import { Grid, Divider, IconButton, List, ListItemButton, ListItemIcon, ListItemText, Drawer } from '@mui/material';
 import { styled, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
-import InfoIcon from '@mui/icons-material/Info';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import CalculateIcon from '@mui/icons-material/Calculate';
-import BuildIcon from '@mui/icons-material/Build';
-import MailIcon from '@mui/icons-material/Mail';
-import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
+import { Link } from 'react-router-dom';
 import { links, buttons } from '../common/CommoData';
+import InfoIcon from '@mui/icons-material/Info';
+import HomeWorkIcon from '@mui/icons-material/HomeWork';
+import MailIcon from '@mui/icons-material/Mail';
+import RollerShadesIcon from '@mui/icons-material/RollerShades';
+import BalconyIcon from '@mui/icons-material/Balcony';
+import MotionPhotosAutoIcon from '@mui/icons-material/MotionPhotosAuto';
 
 const DrawerHeader = styled('div')(({ theme }) => ({
   display: 'flex', alignItems: 'center',
@@ -22,17 +22,18 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   justifyContent: 'flex-start',
 }));
 
+const linksIcons = [<InfoIcon />, <HomeWorkIcon />, <MailIcon />];
+
+const buttonsIcons = [<RollerShadesIcon />, <BalconyIcon />, <MotionPhotosAutoIcon />];
+
 export default function NavDrawer() {
-  let drawerWidth;
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
   const handleDrawerOpen = () => {
-    drawerWidth = 240;
     setOpen(true);
   };
   const handleDrawerClose = () => {
-    drawerWidth = 0;
     setOpen(false);
   };
 
@@ -40,9 +41,9 @@ export default function NavDrawer() {
     <>
       <Drawer
         sx={{
-          width: drawerWidth, flexShrink: 0,
+          width: 240, flexShrink: 0,
           '& .MuiDrawer-paper': {
-            width: drawerWidth,
+            width: 240,
           },
         }}
         variant="persistent"
@@ -60,41 +61,25 @@ export default function NavDrawer() {
         <Divider />
         <List>
           {links.map( (link, index) => (
-            <ListItem
-              button
-              key={link.title}
-              href={link.id} onClick={handleDrawerClose}
+            <ListItemButton
+              key={link.id} onClick={handleDrawerClose}
+              component={Link} to={link.href}
             >
-              <ListItemIcon>
-                {index === 0 ? (
-                  <InfoIcon />
-                ) : index === 1 ? (
-                  <PrecisionManufacturingIcon />
-                ) : index === 2 ? (
-                  <MailIcon />
-                ) : null}
-              </ListItemIcon>
+              <ListItemIcon>{linksIcons[index]}</ListItemIcon>
               <ListItemText primary={link.title} />
-            </ListItem>
+            </ListItemButton>
           ) )}
         </List>
         <Divider />
         <List>
           {buttons.map( (button, index) => (
-            <ListItem
-              button
-              key={button.title}
-              href={button.href} onClick={handleDrawerClose}
+            <ListItemButton
+              key={button.id} onClick={handleDrawerClose}
+              component={Link} to={button.href}
             >
-              <ListItemIcon>
-                {index === 0 ? (
-                  <BuildIcon />
-                ) : index === 1 ? (
-                  <CalculateIcon />
-                ) : null}
-              </ListItemIcon>
+              <ListItemIcon>{buttonsIcons[index]}</ListItemIcon>
               <ListItemText primary={button.title} />
-            </ListItem>
+            </ListItemButton>
           ) )}
         </List>
       </Drawer>

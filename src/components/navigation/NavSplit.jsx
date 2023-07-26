@@ -13,7 +13,7 @@ const options = ['Ролети', 'Ворота', 'Автоматика'];
 const hrefs = ['/rolets', '/gates', '/motors'];
 const colors = ['primary', 'secondary', 'primary' ];
 
-export default function SplitButton() {
+export default function NavSplit() {
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
   const [selectedIndex, setSelectedIndex] = React.useState(1);
@@ -74,7 +74,7 @@ export default function SplitButton() {
             <Paper>
               <ClickAwayListener onClickAway={handleClose}>
                 <MenuList id="split-button-menu">
-                  {options.map((option, index) => (
+                  {options.map( (option, index) => (
                     <MenuItem
                       key={option}
                       selected={index === selectedIndex}
@@ -82,7 +82,7 @@ export default function SplitButton() {
                     >
                       {option}
                     </MenuItem>
-                  ))}
+                  ) )}
                 </MenuList>
               </ClickAwayListener>
             </Paper>
