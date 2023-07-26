@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 //import { lazy, Suspense } from 'react';
 import Navigation from '../navigation/Navigation';
-import { TypographyHeader } from '../common/TypographyVariants';
+import { TypographyHeader, TypographyParagraph } from '../common/TypographyVariants';
 import { Helmet } from 'react-helmet';
 
 function GatesPage() {
@@ -21,14 +21,19 @@ function GatesPage() {
         />
         <meta name="keywords" 
           content="секційні ворота, розпашна автомаатика, ролові ворота, відкатний двигун, віконна ролет, шлагбаум,
-              устаановка воріт, монтаж автоматики, установка ролет, радіоприймач" />
+              установка воріт, монтаж автоматики, установка ролет, радіоприймач" />
       </Helmet>
       {/* Перевіряємо, чи завантажилась навігація перед її рендерингом */}
       {navigationLoaded && <Navigation show={true} />}
       <TypographyHeader sx={{ color: '#000', mt: 10 }}>
         Шановні клієнти!<br/>
-        Сторінка із рзноманіттям секційних воріт на даний момент знаходиться у розробці!
+        Сторінка із різноманіттям секційних воріт на даний момент знаходиться у розробці!
       </TypographyHeader>
+      <TypographyParagraph
+        mb={15} 
+      >
+        Незабаром тут ви побачите гаражні та промислові ворота.
+      </TypographyParagraph>
     </>
   );
 }

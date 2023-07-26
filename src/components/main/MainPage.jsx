@@ -32,8 +32,16 @@ export default function MainPage() {
           content="гаражні ворота, розпашні ворота, захисні ролети, відкатні ворота, алюмінієві ролети, шлагбауми,
               монтаж воріт, налаштування автоматики, монтаж ролет, запис пульта" />
     </Helmet>
+       {/* відображаємо Navigation для малих екранів */}
+       {ctx.isSmall && (
+          <Navigation
+            component={motion.div} // обгортка Navigation при застосуванні анімації
+            show={true}
+            position={null} // вкажіть позицію, якщо потрібно
+          />
+        )}
       <Welcome />
-       {/* умовним оператором відображаємо Navigation не для малих екранів */}
+       {/* відображаємо Navigation не для малих екранів */}
        {!ctx.isSmall && (
           <Navigation
             initial="initial" //пропс для бібліотеки framer-motion
