@@ -17,7 +17,6 @@ export default function NavLinks() {
       scrollToElement(id);
     }
   };
-
   return links.map( (link) => {
     return (
       <Grid item key={link.title}>

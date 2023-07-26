@@ -5,7 +5,6 @@ import { styled, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import { Link } from 'react-router-dom';
 import { links, buttons } from '../common/CommoData';
 import InfoIcon from '@mui/icons-material/Info';
 import HomeWorkIcon from '@mui/icons-material/HomeWork';
@@ -21,20 +20,32 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   ...theme.mixins.toolbar,
   justifyContent: 'flex-start',
 }));
-
 const linksIcons = [<InfoIcon />, <HomeWorkIcon />, <MailIcon />];
-
 const buttonsIcons = [<RollerShadesIcon />, <BalconyIcon />, <MotionPhotosAutoIcon />];
+
+const scrollToElement = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 
 export default function NavDrawer() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
-
   const handleDrawerOpen = () => {
     setOpen(true);
   };
   const handleDrawerClose = () => {
     setOpen(false);
+  };
+
+  const onClickHandler = (event, id) => {
+    event.preventDefault();
+    if (id) {
+      scrollToElement(id);
+      handleDrawerClose();
+    }
   };
 
   return (
@@ -62,8 +73,8 @@ export default function NavDrawer() {
         <List>
           {links.map( (link, index) => (
             <ListItemButton
-              key={link.id} onClick={handleDrawerClose}
-              component={Link} to={link.href}
+              key={link.id} onClick={(event) => onClickHandler(event, link.id)}
+              component="a" href={link.href}             
             >
               <ListItemIcon>{linksIcons[index]}</ListItemIcon>
               <ListItemText primary={link.title} />
@@ -72,12 +83,12 @@ export default function NavDrawer() {
         </List>
         <Divider />
         <List>
-          {buttons.map( (button, index) => (
+          {buttons.map( (button) => (
             <ListItemButton
               key={button.id} onClick={handleDrawerClose}
-              component={Link} to={button.href}
+              component="a" href={button.href}
             >
-              <ListItemIcon>{buttonsIcons[index]}</ListItemIcon>
+              <ListItemIcon>{buttonsIcons[buttons.indexOf(button)]}</ListItemIcon>
               <ListItemText primary={button.title} />
             </ListItemButton>
           ) )}

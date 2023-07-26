@@ -3,20 +3,17 @@ export const links = [
     {
       title: 'Компанія',
       id: 'company',
-      href: '/',
-      content: '#company'
+      href: '/#company',
     },
     {
       title: 'Проекти',
       id: 'objects',
-      href: '/',
-      content: '#objects'
+      href: '/#objects',
     },
     {
       title: 'Контакти',
       id: 'contacts',
-      href: '/',
-      content: '#contacts'
+      href: '/#contacts',
     },
   ];
 
