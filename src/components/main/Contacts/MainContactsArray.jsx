@@ -13,7 +13,7 @@ const MainContactsArray = [
   },
   {
     title: 'Пошта',
-    text: 'tech@rva.expert',
+    text: 'taras@rva.expert',
   },
 ];
 export default MainContactsArray;
