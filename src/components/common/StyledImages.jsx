@@ -45,17 +45,17 @@ export const ImageFullWidth = styled('img')(({ theme }) => ({
 export const ImageSmall = styled('img')(({ theme }) => ({
   boxSizing: 'border-box',
 
-  // [theme.breakpoints.up('lg')]: {
-  //   height: '250px',
-  // },
+  [theme.breakpoints.up('lg')]: {
+    height: '250px',
+  },
 
-  // [theme.breakpoints.between('md', 'lg')]: {
-  //   height: '200px',
-  // },
-  // [theme.breakpoints.between('sm', 'md')]: {
-  //   height: '150px',
-  // },
-  // [theme.breakpoints.between('xs', 'sm')]: {
-  //   height: '100px',
-  // },
+  [theme.breakpoints.between('md', 'lg')]: {
+     height: '200px',
+  },
+  [theme.breakpoints.between('sm', 'md')]: {
+     height: '150px',
+  },
+  [theme.breakpoints.between('xs', 'sm')]: {
+     height: '100px',
+  },
 }));

@@ -9,11 +9,11 @@ const MainContactsArray = [
   },
   {
     title: 'Телефон',
-    text: '+38-099-888-77-33',
+    text: '+38-xxx-xxx-xx-xx',
   },
   {
     title: 'Пошта',
-    text: 'taras@rva.expert',
+    text: 'tech@rva.expert',
   },
 ];
 export default MainContactsArray;

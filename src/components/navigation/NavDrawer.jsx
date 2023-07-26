@@ -1,3 +1,4 @@
+// components/navigation/NavDrawer.jsx
 import * as React from 'react';
 import {
   Grid, Divider, IconButton, List, ListItem, ListItemIcon, ListItemText, Drawer,
@@ -11,8 +12,7 @@ import CalculateIcon from '@mui/icons-material/Calculate';
 import BuildIcon from '@mui/icons-material/Build';
 import MailIcon from '@mui/icons-material/Mail';
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
-import { buttons } from './NavButtons';
-import { links } from './NavLinks';
+import { links, buttons } from '../common/CommoData';
 
 const DrawerHeader = styled('div')(({ theme }) => ({
   display: 'flex', alignItems: 'center',

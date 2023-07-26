@@ -1,26 +1,10 @@
+// components/navigation/NavButtons.jsx
 import { Grid, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { BreakpointsContext } from '../breakpoints-context';
 import NavSplit from './NavSplit';
-
-export const buttons = [
-  {
-    href: '/rolets',
-    title: 'Ролети',
-    color: 'primary',
-  },
-  {
-    href: '/gates',
-    title: 'Ворота',
-    color: 'secondary',
-  },
-  {
-    href: '/motors',
-    title: 'Автоматика',
-    color: 'primary',
-  },
-];
+import { buttons } from '../common/CommoData';
 
 export default function NavButtons() {
   const ctx = useContext(BreakpointsContext);

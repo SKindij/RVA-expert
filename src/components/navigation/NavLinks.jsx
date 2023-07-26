@@ -1,20 +1,7 @@
+// components/navigation/NavLinks.jsx
 import { Button, Grid, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
-
-export const links = [
-  {
-    title: 'Компанія',
-    id: 'company',
-  },
-  {
-    title: 'Проекти',
-    id: 'objects',
-  },
-  {
-    title: 'Контакти',
-    id: 'contacts',
-  },
-];
+import { links } from '../common/CommoData';
 
 const scrollToElement = (id) => {
   const element = document.getElementById(id);
