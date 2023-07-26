@@ -6,14 +6,19 @@ import NavSplit from './NavSplit';
 
 export const buttons = [
   {
-    href: '/products',
-    title: 'Продукція',
+    href: '/rolets',
+    title: 'Ролети',
     color: 'primary',
   },
   {
-    href: '/calculator',
-    title: 'Розрахунок цін',
+    href: '/gates',
+    title: 'Ворота',
     color: 'secondary',
+  },
+  {
+    href: '/motors',
+    title: 'Автоматика',
+    color: 'primary',
   },
 ];
 

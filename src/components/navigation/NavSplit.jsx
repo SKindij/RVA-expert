@@ -9,9 +9,9 @@ import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 
-const options = ['Розрахунок цін', 'Продукція'];
-const hrefs = ['/calculator', '/products'];
-const colors = ['secondary', 'primary'];
+const options = ['Ролети', 'Ворота', 'Автоматика'];
+const hrefs = ['/rolets', '/gates', '/motors'];
+const colors = ['primary', 'secondary', 'primary' ];
 
 export default function SplitButton() {
   const [open, setOpen] = React.useState(false);
@@ -26,7 +26,6 @@ export default function SplitButton() {
   const handleToggle = () => {
     setOpen((prevOpen) => !prevOpen);
   };
-
   const handleClose = (event) => {
     if (anchorRef.current && anchorRef.current.contains(event.target)) {
       return;
