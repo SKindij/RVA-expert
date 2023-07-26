@@ -3,6 +3,14 @@
 
 - - -
 
+
+
+
+
+
+
+- - -
+
 ### 📚 The project structure (architecture):
 
 ```css
@@ -17,6 +25,9 @@ RVA-expert/
 │
 ├─ public/
 │   ├─ site.webmanifest
+│   ├─ robots.txt
+│   ├─ .htaccess
+│   │
 │   ├─ favicon.ico
 │   ├─ apple-touch-icon.png
 │   ├─ android-chrome-192x192.png
@@ -44,6 +55,7 @@ RVA-expert/
       ├─ breakpoints-context.jsx
       │
       ├─ common/
+      │   ├─ CommoData.jsx
       │   ├─ TypographyVariants.jsx
       │   ├─ StyledImages.jsx
       │   │
@@ -78,8 +90,10 @@ RVA-expert/
       │   └─ MainContacts.jsx
       │
       └─ pages/
-         ├─ CalculatorPage.jsx
-         ├─ ProductsPage.jsx
+         ├─ RoletsPage.jsx
+         ├─ GatesPage.jsx
+         ├─ MotorsPage.jsx
+         │
          └─ products/
 ```
 
