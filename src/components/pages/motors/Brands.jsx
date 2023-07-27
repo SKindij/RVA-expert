@@ -1,12 +1,28 @@
 import { Box, styled } from '@mui/material';
 
 const brands = [
-    'https://i.ibb.co/Rhk2VSh/image-9.png',
-    'https://i.ibb.co/99gcp3b/image-8.png',
-    'https://i.ibb.co/Dwj3KYc/image-7.png',
-    'https://i.ibb.co/vVSVd76/image-6.png',
-    'https://i.ibb.co/27wHw8Y/image-5.png',
+  {
+    src: '/images/p-motors/bft-spa-logo.png',
+    alt: 'bft spa logo',
+  },
+  {
+    src: '/images/p-motors/roger-tehnology-logo.png',
+    alt: 'roger tehnology logo',
+  },
+  {
+    src: '/images/p-motors/Nice-Home-logo.png',
+    alt: 'Nice Home logo',
+  },
+  {
+    src: '/images/p-motors/roger-tehnology-logo.png',
+    alt: 'roger tehnology logo',
+  },
+  {
+    src: '/images/p-motors/bft-spa-logo.png',
+    alt: 'bft spa logo',
+  },
 ]
+
 
 const BrandsWrapper = styled(Box)(({ theme }) => ({
     marginBottom: '4rem',
@@ -27,7 +43,7 @@ const Brands = () => {
     return (
         <BrandsWrapper>
             {
-              brands.map( (brand, i) => <img key={i} src={brand} alt='brands' />)
+              brands.map( (brand, i) => <img key={i} src={brand.src} alt={brand.alt} />)
             }
         </BrandsWrapper>
     );

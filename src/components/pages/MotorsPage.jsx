@@ -1,8 +1,14 @@
 // components/pages/MotorsPage.jsx
 import { useState, useEffect } from 'react';
-import { TypographyHeader, TypographyParagraph } from '../common/TypographyVariants';
 import { Helmet } from 'react-helmet';
 import Navigation from '../navigation/Navigation';
+import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+
+
+
+import Brands from './motors/Brands';
 
 
 function MotorsPage() {
@@ -23,8 +29,17 @@ function MotorsPage() {
         content="розпашна автоматика, відкатний двигун, автоматична ролета, шлагбаум,
           установка двигуна, монтаж автоматики, установка ролет, радіоприймач, запис пульта" />
     </Helmet>
-      {/* Перевіряємо, чи завантажилась навігація перед її рендерингом */}
-      {navigationLoaded && <Navigation show={true} />}
+    {/* Перевіряємо, чи завантажилась навігація перед її рендерингом */}
+    {navigationLoaded && <Navigation show={true} />}
+    <Container maxWidth="lg">
+      <Box sx={{ textAlign: 'center', my: 4}}>
+        <Typography variant="h4" component="h1" gutterBottom>
+            Італійська автоматика для всіх видів воріт. Шлагбауми.
+        </Typography>
+      </Box>
+
+
+      <Brands />
 
 
 
@@ -32,9 +47,8 @@ function MotorsPage() {
 
 
 
-
+    </Container>
   </>
   );
 }
-
 export default MotorsPage;

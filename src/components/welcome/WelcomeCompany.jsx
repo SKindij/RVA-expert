@@ -31,7 +31,7 @@ export default function WelcomeCompany() {
         variants={companyVariants} animate={animation}
         component={motion.p} initial="initial"
       >
-        Компанія Тех-Рішення
+        RVA Тех-Рішення
       </Typography>
     </Grid>
   );

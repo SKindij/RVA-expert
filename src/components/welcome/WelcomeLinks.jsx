@@ -15,10 +15,6 @@ const links = [
     title: 'Контакти',
     id: 'contacts',
   },
-  {
-    title: 'Продукція',
-    href: '#',
-  },
 ];
 
 const WelcomeLinks = () => {
