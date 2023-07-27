@@ -21,13 +21,16 @@ export default function Navigation(props) {
         setShowNav(false);
       }
     };
-    if (show) {
-      setShowNav(true);
+    // перевіряємо, чи показ навігації контролюється пропсом
+    if (show !== undefined) {
+      setShowNav(show);
+    } else {
+      // В іншому випадку, слідкуємо за прокручуванням сторінки
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
     }
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
   }, [show]);
 
   return (

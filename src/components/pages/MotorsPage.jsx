@@ -5,15 +5,19 @@ import Navigation from '../navigation/Navigation';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-
 import Brands from './motors/Brands';
 import Services from './motors/Services';
+import MotorFAQ from './motors/MotorFAQ';
 
 function MotorsPage() {
-  const [navigationLoaded, setNavigationLoaded] = useState(false);
+  const [showNavigation, setShowNavigation] = useState(false);
   useEffect(() => {
-    // При завантаженні ProductsPage позначаємо, що навігація завантажилась
-    setNavigationLoaded(true);
+    // задаємо певну затримку для рендерінгу навігації
+    const timeout = setTimeout(() => {
+      setShowNavigation(true);
+    }, 100);    
+    // прибираємо таймер при розмонтуванні компонента
+    return () => clearTimeout(timeout);
   }, []);
 
   return (
@@ -21,23 +25,23 @@ function MotorsPage() {
     <Helmet>
       <title>RVA Автоматика для воріт</title>
       <meta name="description"
-        content="Якщо Вам потрібен індивідуальний підхід при виконанні замовлення, то ви прийшли в потрібне місце!"
+        content="Якщо Вам потрібена автоматика для воріт, ви прийшли в потрібне місце!"
       />
       <meta name="keywords" 
         content="розпашна автоматика, відкатний двигун, автоматична ролета, шлагбаум,
           установка двигуна, монтаж автоматики, установка ролет, радіоприймач, запис пульта" />
     </Helmet>
-    {/* Перевіряємо, чи завантажилась навігація перед її рендерингом */}
-    {navigationLoaded && <Navigation show={true} />}
+    {/* Перевіряємо, чи можемо відображати навігацію */}
+    {showNavigation && <Navigation show={true} />}
     <Container maxWidth="lg">
       <Box sx={{ textAlign: 'center', my: 4}}>
         <Typography variant="h4" component="h1" gutterBottom>
-            Автоматика для всіх видів воріт. Шлагбауми.
+          Сучасна автоматика для воріт: надійність та комфорт на кожен день
         </Typography>
       </Box>
       <Brands />
       <Services />
-
+      <MotorFAQ />
 
     </Container>
   </>
