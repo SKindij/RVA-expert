@@ -6,10 +6,8 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
-
-
 import Brands from './motors/Brands';
-
+import Services from './motors/Services';
 
 function MotorsPage() {
   const [navigationLoaded, setNavigationLoaded] = useState(false);
@@ -34,17 +32,11 @@ function MotorsPage() {
     <Container maxWidth="lg">
       <Box sx={{ textAlign: 'center', my: 4}}>
         <Typography variant="h4" component="h1" gutterBottom>
-            Італійська автоматика для всіх видів воріт. Шлагбауми.
+            Автоматика для всіх видів воріт. Шлагбауми.
         </Typography>
       </Box>
-
-
       <Brands />
-
-
-
-
-
+      <Services />
 
 
     </Container>
