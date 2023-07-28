@@ -1,41 +1,50 @@
-//потрібно додати збереження стану завантаження для лінивого компонента
+// components/pages/MotorsPage.jsx
 import { useState, useEffect } from 'react';
-//import { lazy, Suspense } from 'react';
-import Navigation from '../navigation/Navigation';
-import { TypographyHeader, TypographyParagraph } from '../common/TypographyVariants';
 import { Helmet } from 'react-helmet';
+import Navigation from '../navigation/Navigation';
+import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import GateBrands from './gates/GateBrands';
+import GateTypes from './gates/GateTypes';
+import GateFAQ from './gates/GateFAQ';
 
 function GatesPage() {
-  const [navigationLoaded, setNavigationLoaded] = useState(false);
+  const [showNavigation, setShowNavigation] = useState(false);
   useEffect(() => {
-    // При завантаженні компонента ProductsPage позначаємо, що навігація завантажилась
-    setNavigationLoaded(true);
+    // задаємо певну затримку для рендерінгу навігації
+    const timeout = setTimeout(() => {
+      setShowNavigation(true);
+    }, 100);    
+    // прибираємо таймер при розмонтуванні компонента
+    return () => clearTimeout(timeout);
   }, []);
 
   return (
-    <>
-      <Helmet>
-        <title>RVA Секційні ворота</title>
-        <meta name="description"
-          content="Якщо Вам потрібен індивідуальний підхід при виконанні замовлення, то ви прийшли в потрібне місце!"
-        />
-        <meta name="keywords" 
-          content="секційні ворота, розпашна автомаатика, ролові ворота, відкатний двигун, віконна ролет, шлагбаум,
-              установка воріт, монтаж автоматики, установка ролет, радіоприймач" />
-      </Helmet>
-      {/* Перевіряємо, чи завантажилась навігація перед її рендерингом */}
-      {navigationLoaded && <Navigation show={true} />}
-      <TypographyHeader sx={{ color: '#000', mt: 10 }}>
-        Шановні клієнти!<br/>
-        Сторінка із різноманіттям секційних воріт на даний момент знаходиться у розробці!
-      </TypographyHeader>
-      <TypographyParagraph
-        mb={15} 
-      >
-        Незабаром тут ви побачите гаражні та промислові ворота.
-      </TypographyParagraph>
-    </>
+  <>
+    <Helmet>
+      <title>RVA Автоматика для воріт</title>
+      <meta name="description"
+        content="Якщо Вам потрібена автоматика для воріт, ви прийшли в потрібне місце!"
+      />
+      <meta name="keywords" 
+        content="розпашна автоматика, відкатний двигун, автоматична ролета, шлагбаум,
+          установка двигуна, монтаж автоматики, установка ролет, радіоприймач, запис пульта" />
+    </Helmet>
+    {/* Перевіряємо, чи можемо відображати навігацію */}
+    {showNavigation && <Navigation show={true} />}
+    <Container maxWidth="lg">
+      <Box sx={{ textAlign: 'center', my: 4}}>
+        <Typography variant="h4" component="h1" gutterBottom>
+          Сучасна автоматика для воріт: надійність та комфорт на кожен день
+        </Typography>
+      </Box>
+      <GateBrands />
+      <GateTypes />
+      <GateFAQ />
+
+    </Container>
+  </>
   );
 }
-
 export default GatesPage;
