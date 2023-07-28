@@ -5,7 +5,7 @@ import Navigation from '../navigation/Navigation';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import GateBrands from './gates/GateBrands';
+
 import GateTypes from './gates/GateTypes';
 import GateFAQ from './gates/GateFAQ';
 
@@ -23,23 +23,22 @@ function GatesPage() {
   return (
   <>
     <Helmet>
-      <title>RVA Автоматика для воріт</title>
+      <title>RVA Секційні ворота</title>
       <meta name="description"
-        content="Якщо Вам потрібена автоматика для воріт, ви прийшли в потрібне місце!"
+        content="Якщо Вам потрібні секційні ворота, ви прийшли в потрібне місце!"
       />
       <meta name="keywords" 
-        content="розпашна автоматика, відкатний двигун, автоматична ролета, шлагбаум,
-          установка двигуна, монтаж автоматики, установка ролет, радіоприймач, запис пульта" />
+        content="монтаж секційних воріт, гаражні ворота, підйомні ворота, ворота з панелей, установка воріт" />
     </Helmet>
     {/* Перевіряємо, чи можемо відображати навігацію */}
     {showNavigation && <Navigation show={true} />}
     <Container maxWidth="lg">
       <Box sx={{ textAlign: 'center', my: 4}}>
         <Typography variant="h4" component="h1" gutterBottom>
-          Сучасна автоматика для воріт: надійність та комфорт на кожен день
+          Майстерність та інновації: Ворота для всіх випадків життя
         </Typography>
       </Box>
-      <GateBrands />
+
       <GateTypes />
       <GateFAQ />
 
