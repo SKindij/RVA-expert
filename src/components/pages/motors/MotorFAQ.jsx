@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
-import SectionTitle from './SectionTitle';
-import CanvasAccordion from './CanvasAccordion';
+import SectionTitle from '../../common/SectionTitle';
+import CanvasAccordion from '../../common/CanvasAccordion';
 
 const AccordionContent = [
     {

@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types';
 import { Box, Grid, Card, CardContent, CardMedia, Typography } from '@mui/material';
-import SectionTitle from './SectionTitle';
+import SectionTitle from '../../common/SectionTitle';
 
-const services = [
+const types = [
   {
     image: '/images/p-motors/sliding-gates.png',
     title: 'Відкатні двигуни',
@@ -46,13 +47,22 @@ const Service = ({ service }) => {
   );
 };
 
-const Services = () => {
+Service.propTypes = {
+  service: PropTypes.shape({
+    image: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
+
+const MotorTypes = () => {
   return (
     <Box>
-      <SectionTitle title="Ми надаємо" colored="наступні послуги" />
+      <SectionTitle title="Ми надаємо наступні" colored="товари та послуги" />
 
       <Grid sx={{ mt: 4 }} container spacing={2}>
-        {services.map( (service, i) => (
+        {types.map( (service, i) => (
           <Grid item xs={12} sm={6} md={4} key={i}>
             <Service service={service} />
           </Grid>
@@ -62,4 +72,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default MotorTypes;

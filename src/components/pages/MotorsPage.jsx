@@ -5,8 +5,8 @@ import Navigation from '../navigation/Navigation';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Brands from './motors/Brands';
-import Services from './motors/Services';
+import MotorBrands from './motors/MotorBrands';
+import MotorTypes from './motors/MotorTypes';
 import MotorFAQ from './motors/MotorFAQ';
 
 function MotorsPage() {
@@ -39,8 +39,8 @@ function MotorsPage() {
           Сучасна автоматика для воріт: надійність та комфорт на кожен день
         </Typography>
       </Box>
-      <Brands />
-      <Services />
+      <MotorBrands />
+      <MotorTypes />
       <MotorFAQ />
 
     </Container>

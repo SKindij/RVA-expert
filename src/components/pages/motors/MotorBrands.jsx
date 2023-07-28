@@ -1,5 +1,5 @@
 import { Box, styled } from '@mui/material';
-import SectionTitle from './SectionTitle';
+import SectionTitle from '../../common/SectionTitle';
 
 const brands = [
   {
@@ -23,8 +23,6 @@ const brands = [
     alt: 'roger tehnology logo',
   },
 ]
-
-
 const BrandsWrapper = styled(Box)(({ theme }) => ({
     marginBottom: '4rem', marginTop: '3rem',
     display: 'flex', justifyContent: 'space-between',
@@ -36,7 +34,7 @@ const BrandsWrapper = styled(Box)(({ theme }) => ({
     }
 }))
 
-const Brands = () => {
+const MotorBrands = () => {
     return (
       <>
         <SectionTitle title="Перевірена часом" colored="італійська якість" />   
@@ -50,4 +48,4 @@ const Brands = () => {
     );
 };
 
-export default Brands;
+export default MotorBrands;
