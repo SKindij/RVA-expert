@@ -1,4 +1,4 @@
-// components/pages/MotorsPage.jsx
+// components/pages/GatesPage.jsx
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Navigation from '../navigation/Navigation';
