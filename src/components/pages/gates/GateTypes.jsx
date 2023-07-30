@@ -56,7 +56,7 @@ Service.propTypes = {
 };
 
 
-const MotorTypes = () => {
+const GateTypes = () => {
   return (
     <Box>
       <SectionTitle title="Доступні гаражні" colored="секційні ворота" />
@@ -72,4 +72,4 @@ const MotorTypes = () => {
   );
 };
 
-export default MotorTypes;
+export default GateTypes;

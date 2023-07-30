@@ -32,7 +32,7 @@ const AccordionContent = [
       description: ''
     }
 ]
-const MotorFAQ = () => {
+const RoletFAQ = () => {
     return (
         <Box>
             <SectionTitle title='Frequently Asked' colored='Questions'></SectionTitle>
@@ -51,4 +51,4 @@ const MotorFAQ = () => {
         </Box>
     );
 };
-export default MotorFAQ;
+export default RoletFAQ;

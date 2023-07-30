@@ -34,7 +34,7 @@ const BrandsWrapper = styled(Box)(({ theme }) => ({
     }
 }))
 
-const MotorBrands = () => {
+const GateBrands = () => {
     return (
       <>
         <SectionTitle title="Перевірена часом" colored="італійська якість" />   
@@ -48,4 +48,4 @@ const MotorBrands = () => {
     );
 };
 
-export default MotorBrands;
+export default GateBrands;

@@ -32,7 +32,7 @@ const AccordionContent = [
       description: 'Наші промислові ворота оснащені різними заходами безпеки, такими як датчики руху, автоматичний зупинник, аварійне відкривання, що забезпечує високий рівень безпеки при експлуатації.'
     }
 ]
-const MotorFAQ = () => {
+const GateFAQ = () => {
     return (
         <Box>
             <SectionTitle title='Frequently Asked' colored='Questions'></SectionTitle>
@@ -51,4 +51,4 @@ const MotorFAQ = () => {
         </Box>
     );
 };
-export default MotorFAQ;
+export default GateFAQ;
