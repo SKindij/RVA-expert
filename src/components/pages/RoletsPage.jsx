@@ -6,10 +6,10 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
-import GateTypes from './gates/GateTypes';
-import GateFAQ from './gates/GateFAQ';
+import RoletTypes from './rolets/RoletTypes';
+import RoletFAQ from './rolets/RoletFAQ';
 
-function GatesPage() {
+function RoletsPage() {
   const [showNavigation, setShowNavigation] = useState(false);
   useEffect(() => {
     // задаємо певну затримку для рендерінгу навігації
@@ -23,27 +23,27 @@ function GatesPage() {
   return (
   <>
     <Helmet>
-      <title>RVA Секційні ворота</title>
+      <title>RVA Захисні ролети</title>
       <meta name="description"
-        content="Якщо Вам потрібні секційні ворота, ви прийшли в потрібне місце!"
+        content="Якщо Вам потрібні захисні ролети, ви прийшли в потрібне місце!"
       />
       <meta name="keywords" 
-        content="монтаж секційних воріт, гаражні ворота, підйомні ворота, ворота з панелей, установка воріт" />
+        content="монтаж гаражних ролет, ролети на вікна, ролетні решітки, ролети з ламелей, установка ролет" />
     </Helmet>
     {/* Перевіряємо, чи можемо відображати навігацію */}
     {showNavigation && <Navigation show={true} />}
     <Container maxWidth="lg">
       <Box sx={{ textAlign: 'center', my: 4}}>
         <Typography variant="h4" component="h1" gutterBottom>
-          Майстерність та інновації: Ворота для всіх випадків життя
+          Зовнішні Захисні Алюмінієві Ролети
         </Typography>
       </Box>
 
-      <GateTypes />
-      <GateFAQ />
+      <RoletTypes />
+      <RoletFAQ />
 
     </Container>
   </>
   );
 }
-export default GatesPage;
+export default RoletsPage;
