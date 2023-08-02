@@ -1,1 +1,23 @@
-{"name":"","short_name":"","icons":[{"src":"/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}],"theme_color":"#ffffff","background_color":"#ffffff","display":"standalone"}
+{
+    "name":"RVA Експерт",
+    "short_name":"RVA",
+    "description": "Це прогресивний веб-додаток про секційні ворота, захисні ролети, автоматику для воріт.",
+    "start_url": "/",
+    "categories": ["будинок", "конструкція", "покращення будинку", "захист будинку", "автоматизація воріт"],
+    "orientation": "portrait",
+    "lang": "ua",
+    "dir": "ltr",
+    "icons":[
+        {"src":"/android-chrome-192x192.png",
+        "sizes":"192x192",
+        "type":"image/png"
+        },
+        {"src":"/android-chrome-512x512.png",
+        "sizes":"512x512",
+        "type":"image/png"
+        }
+    ],
+    "theme_color":"#ff9327",
+    "background_color":"#F3F3F3",
+    "display":"browser"
+}
