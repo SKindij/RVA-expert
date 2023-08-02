@@ -30,6 +30,7 @@ function MotorsPage() {
       <meta name="keywords" 
         content="розпашна автоматика, відкатний двигун, автоматична ролета, шлагбаум,
           установка двигуна, монтаж автоматики, установка ролет, радіоприймач, запис пульта" />
+      <link rel="canonical" href="https://rva.expert/motors" />
     </Helmet>
     {/* Перевіряємо, чи можемо відображати навігацію */}
     {showNavigation && <Navigation show={true} />}

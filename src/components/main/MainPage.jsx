@@ -31,6 +31,7 @@ export default function MainPage() {
         <meta name="keywords" 
           content="гаражні ворота, розпашні ворота, захисні ролети, відкатні ворота, алюмінієві ролети, шлагбауми,
               монтаж воріт, налаштування автоматики, монтаж ролет, запис пульта" />
+        <link rel="canonical" href="https://rva.expert/" />
     </Helmet>
        {/* відображаємо Navigation для малих екранів */}
        {ctx.isSmall && (

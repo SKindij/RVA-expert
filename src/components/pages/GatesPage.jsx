@@ -29,6 +29,7 @@ function GatesPage() {
       />
       <meta name="keywords" 
         content="монтаж секційних воріт, гаражні ворота, підйомні ворота, ворота з панелей, установка воріт" />
+      <link rel="canonical" href="https://rva.expert/gates" />
     </Helmet>
     {/* Перевіряємо, чи можемо відображати навігацію */}
     {showNavigation && <Navigation show={true} />}

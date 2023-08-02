@@ -29,6 +29,7 @@ function RoletsPage() {
       />
       <meta name="keywords" 
         content="монтаж гаражних ролет, ролети на вікна, ролетні решітки, ролети з ламелей, установка ролет" />
+      <link rel="canonical" href="https://rva.expert/rolets" />
     </Helmet>
     {/* Перевіряємо, чи можемо відображати навігацію */}
     {showNavigation && <Navigation show={true} />}
