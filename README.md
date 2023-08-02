@@ -3,8 +3,9 @@
 
 - - -
 
-
-
+During the development of this SPA I used:
+* the **React** library based on Vite;
+* framework **Material UI**;
 
 
 
@@ -27,6 +28,7 @@ RVA-expert/
 │   ├─ site.webmanifest
 │   ├─ robots.txt
 │   ├─ .htaccess
+│   ├─ sitemap.xml
 │   │
 │   ├─ favicon.ico
 │   ├─ apple-touch-icon.png
