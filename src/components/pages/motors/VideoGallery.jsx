@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { Box, Typography, Grid } from '@mui/material';
-import SectionTitleTwo from './SectionTitleTwo';
+import SectionTitleTwo from '../../common/SectionTitleTwo';
 
 const VideoGallery = ({ videoUrls }) => {
   return (
