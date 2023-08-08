@@ -15,7 +15,7 @@ export default function Navigation(props) {
   useEffect(() => {
     const handleScroll = () => {
       const position = window.scrollY;
-      if (position > 800) {
+      if (position > 500) {
         setShowNav(true);
       } else {
         setShowNav(false);

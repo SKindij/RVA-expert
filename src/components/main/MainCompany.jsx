@@ -19,10 +19,7 @@ export default function MainCompany() {
       <Grid container item justifyContent="center" alignItems="center">
         <MainTypowriter />
       </Grid>
-      <Grid
-        container item mb={5}
-        justifyContent="center" alignItems="flex-start"
-      >
+      <Grid container item mb={5} justifyContent="center" alignItems="flex-start">
         <TypographyParagraph
           component={motion.p} variants={paragraphVariants}
           initial="initial" whileInView="animate"
@@ -34,6 +31,7 @@ export default function MainCompany() {
           Якщо Вам потрібен індивідуальний підхід та професіоналізм під час виконання замовлення - ви прийшли у потрібне місце!
         </TypographyParagraph>
       </Grid>
+      
     </Grid>
   );
 }
