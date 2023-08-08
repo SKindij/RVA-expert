@@ -5,10 +5,10 @@ import SectionTitleTwo from '../../common/SectionTitleTwo';
 const VideoGallery = ({ videoUrls }) => {
   return (
     <Box p={2} >
-   <SectionTitleTwo title="Цікаві та пізнавальні " 
-       colored="відеоролики по автоматиці та шлагбаумах" sx={{textAlign: 'left'}} 
-   />
-      <Grid container spacing={3}>
+      <SectionTitleTwo title="Цікаві та пізнавальні " 
+         colored="відеоролики по автоматиці та шлагбаумах"  
+      />
+      <Grid container sx={{ mt: 1 }} spacing={3}>
         {videoUrls.map((video) => (
           <Grid key={video.id} item xs={12} sm={6} md={4} lg={4} xl={4}>
             <iframe
@@ -17,7 +17,7 @@ const VideoGallery = ({ videoUrls }) => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen loading="lazy"
             ></iframe>
-			<Typography variant="subtitle2" align="center">
+            <Typography variant="subtitle2" align="center">
               {video.title}
             </Typography>
           </Grid>
