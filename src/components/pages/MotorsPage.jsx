@@ -7,7 +7,44 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import MotorBrands from './motors/MotorBrands';
 import MotorTypes from './motors/MotorTypes';
+import VideoGallery from './motors/VideoGallery';
 import MotorFAQ from './motors/MotorFAQ';
+import './page-styles-module.css';
+
+const videoUrls = [
+  {
+   id: 'V101',
+   url: 'https://www.youtube.com/embed/S2z2mU6LIeU',
+   title: 'ARES VELOCE SMART BT A500 Італійська швидкісна автоматика для колективного користування'
+  },
+  {
+   id: 'V102',
+   url: 'https://www.youtube.com/embed/RuAvmA3fBTI',
+   title: 'PHOBOS BT A40 відкриття розпашних створок назовні'
+  },
+  {
+   id: 'V103',
+   url: 'https://www.youtube.com/embed/0a8iRZuIbZY',
+   title: 'BBT BAT модуль аварійного живлення для розпашних воріт'
+   },
+  {
+   id: 'V104',
+   url: 'https://www.youtube.com/embed/zpDCnH1Uyq8', 
+   title: 'SL BAT 2 модуль аварійного живлення відкатних воріт'
+   },
+  {
+   id: 'V105',
+   url: 'https://www.youtube.com/embed/DZv_dtwVGVw',
+   title: 'BFT GIOTTO ULTRA XL приклад роботи на об\'єкті'
+   },
+  {
+   id: 'V106',
+   url: 'https://www.youtube.com/embed/OVD8X1BqPs8',
+   title: 'E5 швидкісна автоматика для хвіртки або дверей'
+   },  
+];
+
+
 
 function MotorsPage() {
   const [showNavigation, setShowNavigation] = useState(false);
@@ -42,6 +79,8 @@ function MotorsPage() {
       </Box>
       <MotorBrands />
       <MotorTypes />
+
+      <VideoGallery videoUrls={videoUrls} />
       <MotorFAQ />
 
     </Container>
