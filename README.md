@@ -43,8 +43,9 @@ RVA-expert/
 │      │
 │      ├─ m-gallery/
 │      ├─ m-objects/
-│      ├─ m-staff/
-│      └─ products/
+│      ├─ p-gates/
+│      ├─ p-rolets
+│      └─ p-motors/
 │
 └─ src/
    ├─ main.jsx
@@ -57,7 +58,10 @@ RVA-expert/
       ├─ breakpoints-context.jsx
       │
       ├─ common/
+      │   ├─ CanvasAccordion.jsx      
       │   ├─ CommoData.jsx
+      │   ├─ SectionTitle.jsx
+      │   ├─ SectionTitleTwo.jsx      
       │   ├─ TypographyVariants.jsx
       │   ├─ StyledImages.jsx
       │   │
@@ -86,17 +90,33 @@ RVA-expert/
       │   ├─ MainPage.jsx
       │   │
       │   ├─ MainCompany.jsx
+      │   ├─ Company/
+      │   │            
       │   ├─ MainGallery.jsx
+      │   ├─ Gallery/
+      │   │
       │   ├─ MainWhyUs.jsx
+      │   ├─ WhyUs/
+      │   │      
       │   ├─ MainObjects.jsx
-      │   └─ MainContacts.jsx
+      │   ├─ Objects/
+      │   │ 
+      │   ├─ MainContacts.jsx           
+      │   └─ Contacts/
       │
       └─ pages/
          ├─ RoletsPage.jsx
-         ├─ GatesPage.jsx
-         ├─ MotorsPage.jsx
+         ├─ rolets/
          │
-         └─ products/
+         ├─ GatesPage.jsx
+         ├─ gates/
+         │
+         ├─ MotorsPage.jsx
+         ├─ motors/
+         │
+         └─ page-styles-module.css
+
+         
 ```
 
 
