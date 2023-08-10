@@ -7,6 +7,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import MotorBrands from './motors/MotorBrands';
 import MotorTypes from './motors/MotorTypes';
+import MotorGoods from './motors/MotorGoods';
 import VideoGallery from './motors/VideoGallery';
 import MotorFAQ from './motors/MotorFAQ';
 import './page-styles-module.css';
@@ -79,10 +80,9 @@ function MotorsPage() {
       </Box>
       <MotorBrands />
       <MotorTypes />
-
+      <MotorGoods />
       <VideoGallery videoUrls={videoUrls} />
       <MotorFAQ />
-
     </Container>
   </>
   );

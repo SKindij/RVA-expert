@@ -1,5 +1,5 @@
 import { Box, IconButton, Tab, Tabs, Grid } from '@mui/material';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useTheme } from '@mui/material';
 import SectionTitleTwo from './SectionTitleTwo';
@@ -26,21 +26,21 @@ const MotorGoods = () => {
                },
            }}>
             <SectionTitleTwo title="Запрошуємо ознайомитися" 
-			  colored="із нашими пропозиціями" sx={{textAlign: 'left'}} 
+              colored="із нашими пропозиціями" sx={{textAlign: 'left'}} 
 			/>
             <Box sx={{
               display: 'flex', justifyContent: 'space-between',
               lignItems: 'center', gap: 2
             }}>
                 <Tabs value={value} onChange={handleChange} centered 
-				  sx={{
+                  sx={{
                   '& .MuiTabs-indicator': {display: 'none'},
                   '& .Mui-selected': {color: 'theme.palette.primary.green', fontWeight: 'bold'},
                   '& .MuiButtonBase-root': {textTransform: 'capitalize'},
                   '& .css-drrf1x-MuiButtonBase-root-MuiTab-root.Mui-selected': {color: 'theme.palette.primary.green'}
                 }}>
                     <Tab label="Усі" 
-					  className={animateTabs ? 'fade-in-animation' : ''}
+                      className={animateTabs ? 'fade-in-animation' : ''}
                       onAnimationEnd={() => setAnimateTabs(false)}
 					/>
                     <Tab label="Відкатні" />
@@ -77,9 +77,9 @@ const MotorGoods = () => {
               <ProductCard
                 image={item.image}
                 title={item.title}
-				product={item.product}
+                product={item.product}
                 description={item.description}
-				kit={item.kit}
+                kit={item.kit}
                 price={item.price}
               />
             </Grid>
@@ -89,4 +89,3 @@ const MotorGoods = () => {
     );
 };
 export default MotorGoods;
-

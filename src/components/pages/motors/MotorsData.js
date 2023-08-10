@@ -1,4 +1,4 @@
-export const AutomaticData = {
+export const MotorsData = {
   sliding: [
   { 	    
     id: 'A101',
