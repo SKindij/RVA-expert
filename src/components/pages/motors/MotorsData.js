@@ -22,7 +22,7 @@ export const MotorsData = {
     },
   {
   id: 'A103',
-  title: 'DEIMOS ULTRA BT A600 KIT',
+  title: 'DEIMOS BT A600 ULTRA',
       image: 'https://img.freepik.com/free-vector/african-american-woman-different-age_74855-6768.jpg?w=1800&t=st=1672770231~exp=1672770831~hmac=bf878ea66da2e62b602d24ce0bb3550912c4a2b8fd3beff41a855f40f7508067',
       product: 'Комплект BFT для відкатних воріт',
   kit: 'Привід 24V з платою MERAK з екраном. Вбудований приймач. 2 пульта Mitto/B2.',
@@ -56,7 +56,7 @@ export const MotorsData = {
       image: 'https://img.freepik.com/free-vector/banking-transaction-app-interface_52683-41135.jpg?w=1380&t=st=1672770409~exp=1672771009~hmac=e102a83c7c073523afb2e0916fcea140c404d74d8724a2eb38f0cbf696a58660',
       product: 'Комплект BFT для відкатних воріт',
   kit: 'Привід 24V з платою HAMAL на DIP-перемикачах. Вбудований приймач. 2 пульта Mitto/B2.',
-      description: 'Електропривід для стулки до 1000 кг',
+      description: 'Двигун для стулки до 1000 кг',
       price: 460,
   type: 'sliding'
     },	  

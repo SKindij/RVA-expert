@@ -33,7 +33,7 @@ const MotorGoods = ({ exchangeRate }) => {
     if (value === 0) {
       return groupKeys.flatMap((groupKey) =>
         MotorsData[groupKey].map((item) => (
-          <Grid item key={item.id}>
+          <Grid item key={item.id} xs={12} sm={6} md={4} lg={3}>
             <Fade in={true} timeout={500}>
               <div>
                 <ProductCard
@@ -52,7 +52,7 @@ const MotorGoods = ({ exchangeRate }) => {
       );
     }    
     return MotorsData[groupKey].map((item) => (
-      <Grid item key={item.id}>
+      <Grid item key={item.id} xs={12} sm={6} md={4} lg={3}> 
         <Fade in={true} timeout={500}>
           <div>
             <ProductCard
@@ -74,49 +74,62 @@ const MotorGoods = ({ exchangeRate }) => {
     <Box sx={{ my: 5, mb: 10 }}>
       <SectionTitleTwo title="Запрошуємо ознайомитися " colored="із нашими пропозиціями" />
       <Box
-        sx={{
-          display: 'flex', flexDirection: 'column', gap: 2,
-          [theme.breakpoints.up('md')]: {
-            flexDirection: 'row', justifyContent: 'space-between', alignContent: 'center',
-          },
-        }}
-      >
-        <Tabs value={value} centered onChange={handleTabChange}
-          sx={{
-            '& .MuiTabs-indicator': { display: 'none' },
-            '& .Mui-selected': {
-              color: theme.palette.primary.green,
-              fontWeight: 'bold',
-            },
-            '& .MuiButtonBase-root': { textTransform: 'capitalize' },
-            '& .css-drrf1x-MuiButtonBase-root-MuiTab-root.Mui-selected': {
-              color: theme.palette.primary.green,
-            },
-          }}
-        >
-          <Tab label="Усі" value={0} />
-          <Tab label="Відкатні" value={1} />
-          <Tab label="Розпашні" value={2} />
-          <Tab label="Шлагбауми" value={3} />
-        </Tabs>
-        {/* Кнопки "Попередній" і "Наступний" */}
-        <Box
   sx={{
     display: 'flex',
-    alignItems: 'center',
-    gap: theme.spacing(2),
+    flexDirection: 'column',
+    gap: 2,
+    [theme.breakpoints.up('md')]: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      alignItems: 'center', // Центруємо вертикально на екранах з md і вище
+    },
   }}
 >
-  <IconButton onClick={handlePrevClick} disabled={value === 0}>
-    <NavigateBeforeIcon />
-  </IconButton>
-  <IconButton onClick={handleNextClick} disabled={value === groupKeys.length}>
-    <NavigateNextIcon />
-  </IconButton>
+  <Tabs
+    value={value}
+    onChange={handleTabChange}
+    centered
+    sx={{
+      '& .MuiTabs-indicator': { display: 'none' },
+      '& .Mui-selected': {
+        color: theme.palette.primary.green,
+        fontWeight: 'bold',
+      },
+      '& .MuiButtonBase-root': { textTransform: 'capitalize' },
+      '& .css-drrf1x-MuiButtonBase-root-MuiTab-root.Mui-selected': {
+        color: theme.palette.primary.green,
+      },
+      [theme.breakpoints.up('md')]: {
+        marginBottom: 0, // Знищуємо простір під Tabs на екранах з md і вище
+      },
+    }}
+  >
+    <Tab label="Усі" value={0} />
+    <Tab label="Відкатні" value={1} />
+    <Tab label="Розпашні" value={2} />
+    <Tab label="Шлагбауми" value={3} />
+  </Tabs>
+  {/* Кнопки "Попередній" і "Наступний" */}
+  <Box
+    sx={{
+      display: 'flex',
+      gap: theme.spacing(1),
+      marginLeft: 'auto', // Права відстань між кнопками і правим краєм контейнера
+      [theme.breakpoints.up('md')]: {
+        marginLeft: theme.spacing(2), // Збільшуємо відстань на екранах з md і вище
+      },
+    }}
+  >
+    <IconButton onClick={handlePrevClick} disabled={value === 0}>
+      <NavigateBeforeIcon />
+    </IconButton>
+    <IconButton onClick={handleNextClick} disabled={value === groupKeys.length}>
+      <NavigateNextIcon />
+    </IconButton>
+  </Box>
 </Box>
-      </Box>
 
-      <Grid container spacing={3} justifyContent="center">
+      <Grid container spacing={2} justifyContent="center">
         {renderProductCards()}
       </Grid>
     </Box>

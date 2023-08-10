@@ -4,7 +4,7 @@ const ProductCard = ({ title, image, product, description, kit, price, exchangeR
   return (
     <Card
       sx={{
-        maxWidth: 300,
+        maxWidth: 300, width: '100%',
         boxShadow: (theme) => theme.shadows[3],
         transition: 'box-shadow 0.3s',
         '&:hover': {boxShadow: (theme) => theme.shadows[6]},
