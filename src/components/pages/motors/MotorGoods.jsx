@@ -3,8 +3,8 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useTheme } from '@mui/material';
-import SectionTitleTwo from './SectionTitleTwo';
-import { AutomaticData } from './AutomaticData';
+import SectionTitleTwo from '../../common/SectionTitleTwo';
+import { MotorsData } from './MotorsData';
 import ProductCard from '../../common/ProductCard';
 const MotorGoods = ({ exchangeRate }) => {
 	const theme = useTheme();
@@ -70,7 +70,7 @@ const MotorGoods = ({ exchangeRate }) => {
         </Box>
         {/* Cards Section */}
         <Grid container spacing={3} justifyContent='center'>
-          {AutomaticData[value].map(item => (
+          {MotorsData[value].map(item => (
             <Grid item key={item.id}>
               <ProductCard
                 image={item.image}
