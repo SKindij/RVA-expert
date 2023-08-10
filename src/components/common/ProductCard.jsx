@@ -1,5 +1,5 @@
 import { Card, CardMedia, CardContent, Typography } from '@mui/material';
-
+import PropTypes from 'prop-types';
 const ProductCard = ({ title, image, product, description, kit, price, exchangeRate }) => {
   return (
     <Card
@@ -44,5 +44,14 @@ const ProductCard = ({ title, image, product, description, kit, price, exchangeR
       </CardContent>
     </Card>
   );
+};
+ProductCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  product: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  kit: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  exchangeRate: PropTypes.number.isRequired,
 };
 export default ProductCard;

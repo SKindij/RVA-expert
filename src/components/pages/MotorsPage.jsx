@@ -1,5 +1,6 @@
 // components/pages/MotorsPage.jsx
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import Navigation from '../navigation/Navigation';
 import Container from '@mui/material/Container';
@@ -47,7 +48,7 @@ const videoUrls = [
 
 
 
-function MotorsPage() {
+function MotorsPage({ exchangeRate }) {
   const [showNavigation, setShowNavigation] = useState(false);
   useEffect(() => {
     // задаємо певну затримку для рендерінгу навігації
@@ -80,11 +81,14 @@ function MotorsPage() {
       </Box>
       <MotorBrands />
       <MotorTypes />
-      <MotorGoods />
+      <MotorGoods exchangeRate={exchangeRate} />
       <VideoGallery videoUrls={videoUrls} />
       <MotorFAQ />
     </Container>
   </>
   );
 }
+MotorsPage.propTypes = {
+  exchangeRate: PropTypes.number.isRequired
+};
 export default MotorsPage;

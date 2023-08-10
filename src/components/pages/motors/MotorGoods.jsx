@@ -1,12 +1,12 @@
 import { Box, IconButton, Tab, Tabs, Grid } from '@mui/material';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useTheme } from '@mui/material';
 import SectionTitleTwo from './SectionTitleTwo';
 import { AutomaticData } from './AutomaticData';
-import ProductCard from './ProductCard';
-
-const MotorGoods = () => {
+import ProductCard from '../../common/ProductCard';
+const MotorGoods = ({ exchangeRate }) => {
 	const theme = useTheme();
     const [value, setValue] = useState(0);
 	const [animateTabs, setAnimateTabs] = useState(true);
@@ -14,7 +14,6 @@ const MotorGoods = () => {
 		setAnimateTabs(true);
         setValue(newValue);
     };
-
     return (
       <Box sx={{ my: 5, mb: 10 }}>
         {/* Header Section */}
@@ -69,7 +68,6 @@ const MotorGoods = () => {
                 </Box>
             </Box>
         </Box>
-
         {/* Cards Section */}
         <Grid container spacing={3} justifyContent='center'>
           {AutomaticData[value].map(item => (
@@ -81,11 +79,15 @@ const MotorGoods = () => {
                 description={item.description}
                 kit={item.kit}
                 price={item.price}
+                exchangeRate={exchangeRate}
               />
             </Grid>
           ))}
         </Grid>
       </Box>
     );
+};
+MotorGoods.propTypes = {
+  exchangeRate: PropTypes.number.isRequired
 };
 export default MotorGoods;

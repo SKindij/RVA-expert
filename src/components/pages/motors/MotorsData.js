@@ -78,7 +78,7 @@ export const MotorsData = {
       product: 'Комплект # 8',
   kit: 'Набір для наповнення 8',
       description: 'Опис і характеристики продукту 8',
-      price: '8000 UAH',
+      price: 3000,
   type: 'swing'
     },
   {
@@ -88,7 +88,7 @@ export const MotorsData = {
       product: 'Комплект # 9',
   kit: 'Набір для наповнення 9',
       description: 'Опис і характеристики продукту 9',
-      price: '9000 UAH',
+      price: 3000,
   type: 'swing'
     },
   {
@@ -98,7 +98,7 @@ export const MotorsData = {
       product: 'Комплект # 10',
   kit: 'Набір для наповнення 10',
       description: 'Опис і характеристики продукту 10',
-      price: '10000 UAH',
+      price: 3000,
   type: 'swing'
     },
   {
@@ -108,7 +108,7 @@ export const MotorsData = {
       product: 'Комплект # 11',
   kit: 'Набір для наповнення 11',
       description: 'Опис і характеристики продукту 11',
-      price: '11000 UAH',
+      price: 3000,
   type: 'swing'
     },	
   
@@ -119,7 +119,7 @@ export const MotorsData = {
       product: 'Комплект # 12',
   kit: 'Набір для наповнення 12',
       description: 'Опис і характеристики продукту 12',
-      price: '12000 UAH',
+      price: 3000,
   type: 'barrier'
     },
   {
@@ -129,7 +129,7 @@ export const MotorsData = {
       product: 'Комплект # 13',
   kit: 'Набір для наповнення 13',
       description: 'Опис і характеристики продукту 13',
-      price: '13000 UAH',
+      price: 3000,
   type: 'barrier'
     },
   {
@@ -139,7 +139,7 @@ export const MotorsData = {
       product: 'Комплект # 14',
   kit: 'Набір для наповнення 14',
       description: 'Опис і характеристики продукту 14',
-      price: '14000 UAH',
+      price: 3000,
   type: 'barrier'
     }		  
   ],
@@ -152,7 +152,7 @@ swing: [
       product: 'Комплект # 8',
   kit: 'Набір для наповнення 8',
       description: 'Опис і характеристики продукту 8',
-      price: '8000 UAH',
+      price: 3000,
   type: 'swing'
     },
   {
@@ -162,7 +162,7 @@ swing: [
       product: 'Комплект # 9',
   kit: 'Набір для наповнення 9',
       description: 'Опис і характеристики продукту 9',
-      price: '9000 UAH',
+      price: 3000,
   type: 'swing'
     },
   {
@@ -172,7 +172,7 @@ swing: [
       product: 'Комплект # 10',
   kit: 'Набір для наповнення 10',
       description: 'Опис і характеристики продукту 10',
-      price: '10000 UAH',
+      price: 3000,
   type: 'swing'
     },
   {
@@ -182,7 +182,7 @@ swing: [
       product: 'Комплект # 11',
   kit: 'Набір для наповнення 11',
       description: 'Опис і характеристики продукту 11',
-      price: '11000 UAH',
+      price: 3000,
   type: 'swing'
     },	
   ],
@@ -195,7 +195,7 @@ barrier: [
       product: 'Комплект # 12',
   kit: 'Набір для наповнення 12',
       description: 'Опис і характеристики продукту 12',
-      price: '12000 UAH',
+      price: 3000,
   type: 'barrier'
     },
   {
@@ -205,7 +205,7 @@ barrier: [
       product: 'Комплект # 13',
   kit: 'Набір для наповнення 13',
       description: 'Опис і характеристики продукту 13',
-      price: '13000 UAH',
+      price: 3000,
   type: 'barrier'
     },
   {
@@ -215,7 +215,7 @@ barrier: [
       product: 'Комплект # 14',
   kit: 'Набір для наповнення 14',
       description: 'Опис і характеристики продукту 14',
-      price: '14000 UAH',
+      price: 3000,
   type: 'barrier'
     }		  
   ],	
