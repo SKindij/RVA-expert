@@ -146,7 +146,7 @@ export const MotorsData = {
 
 swing: [	  
   {
-  id: 'A108',
+  id: 'A115',
   title: 'Назва продукту 8',
       image: 'https://img.freepik.com/free-vector/banking-app-interface-concept_52683-41896.jpg?w=1380&t=st=1672770470~exp=1672771070~hmac=31f9f91155dbeb0964a7f73156d91364b97830f6ca015308866bfcda078eba84',
       product: 'Комплект # 8',
@@ -156,7 +156,7 @@ swing: [
   type: 'swing'
     },
   {
-  id: 'A109',
+  id: 'A116',
   title: 'Назва продукту 9',
       image: 'https://img.freepik.com/free-psd/creative-writing-landing-page-template_23-2149000239.jpg?w=1480&t=st=1672770296~exp=1672770896~hmac=9b4adf12a579737f75cdb03b40caea04abf429697cc402306959bc235391659e',
       product: 'Комплект # 9',
@@ -166,7 +166,7 @@ swing: [
   type: 'swing'
     },
   {
-  id: 'A110',
+  id: 'A117',
   title: 'Назва продукту 10',
       image: 'https://img.freepik.com/free-vector/furniture-shopping-app-concept_23-2148653684.jpg?w=1380&t=st=1672770465~exp=1672771065~hmac=1d94a51c03aa731e89ec3543c55a418acb91848d138aa8df20eab7b1474188f6',
       product: 'Комплект # 10',
@@ -176,7 +176,7 @@ swing: [
   type: 'swing'
     },
   {
-  id: 'A111',
+  id: 'A118',
   title: 'Назва продукту 11',
       image: 'https://img.freepik.com/free-vector/eco-tourism-landing-page-with-man-illustrated_52683-44064.jpg?w=1380&t=st=1672770314~exp=1672770914~hmac=43170f54fac90bd1c020215b4a0086964e174e6e40c25df09ad3b733a38b6a45',
       product: 'Комплект # 11',
@@ -189,7 +189,7 @@ swing: [
 
 barrier: [	  
   {
-  id: 'A112',
+  id: 'A119',
   title: 'Назва продукту 12',
       image: 'https://img.freepik.com/free-vector/autumn-color-tone-social-media-blog-mobile-phone-template_53876-119178.jpg?w=1380&t=st=1672770467~exp=1672771067~hmac=fafa8eb6f351b5857a7a23723b4a2791480bb68a6a1189c9920c49fd40465853',
       product: 'Комплект # 12',
@@ -199,7 +199,7 @@ barrier: [
   type: 'barrier'
     },
   {
-  id: 'A113',
+  id: 'A120',
   title: 'Назва продукту 13',
       image: 'https://img.freepik.com/free-vector/autumn-color-tone-social-media-blog-mobile-phone-template_53876-119178.jpg?w=1380&t=st=1672770467~exp=1672771067~hmac=fafa8eb6f351b5857a7a23723b4a2791480bb68a6a1189c9920c49fd40465853',
       product: 'Комплект # 13',
@@ -209,7 +209,7 @@ barrier: [
   type: 'barrier'
     },
   {
-  id: 'A114',
+  id: 'A121',
   title: 'Назва продукту 14',
       image: 'https://img.freepik.com/free-vector/autumn-color-tone-social-media-blog-mobile-phone-template_53876-119178.jpg?w=1380&t=st=1672770467~exp=1672771067~hmac=fafa8eb6f351b5857a7a23723b4a2791480bb68a6a1189c9920c49fd40465853',
       product: 'Комплект # 14',
