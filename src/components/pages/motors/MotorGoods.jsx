@@ -11,6 +11,8 @@ import { MotorsData } from './MotorsData';
 const MotorGoods = ({ exchangeRate }) => {
   const theme = useTheme();
   const [value, setValue] = useState(0);
+  const groupKeys = ['sliding', 'swing', 'barrier'];
+  const groupKey = groupKeys[value - 1];
 
   const handleTabChange = (_, newValue) => {
     setValue(newValue);
@@ -21,15 +23,13 @@ const MotorGoods = ({ exchangeRate }) => {
       setValue(value - 1);
     }
   };
-
   const handleNextClick = () => {
-    if (value < MotorsData.length - 1) {
+    if (value < groupKeys.length) {
       setValue(value + 1);
     }
   };
 
-  const renderProductCards = () => {
-    const groupKeys = ['sliding', 'swing', 'barrier'];  
+  const renderProductCards = () => {      
     if (value === 0) {
       return groupKeys.flatMap((groupKey) =>
         MotorsData[groupKey].map((item) => (
@@ -50,9 +50,7 @@ const MotorGoods = ({ exchangeRate }) => {
           </Grid>
         ))
       );
-    }
-  
-    const groupKey = groupKeys[value - 1];  
+    }    
     return MotorsData[groupKey].map((item) => (
       <Grid item key={item.id}>
         <Fade in={true} timeout={500}>
@@ -74,6 +72,7 @@ const MotorGoods = ({ exchangeRate }) => {
 
   return (
     <Box sx={{ my: 5, mb: 10 }}>
+      <SectionTitleTwo title="Запрошуємо ознайомитися " colored="із нашими пропозиціями" />
       <Box
         sx={{
           display: 'flex', flexDirection: 'column', gap: 2,
@@ -82,8 +81,6 @@ const MotorGoods = ({ exchangeRate }) => {
           },
         }}
       >
-        <SectionTitleTwo title="Запрошуємо ознайомитися " colored="із нашими пропозиціями" />
-
         <Tabs value={value} centered onChange={handleTabChange}
           sx={{
             '& .MuiTabs-indicator': { display: 'none' },
@@ -102,19 +99,21 @@ const MotorGoods = ({ exchangeRate }) => {
           <Tab label="Розпашні" value={2} />
           <Tab label="Шлагбауми" value={3} />
         </Tabs>
-
-        <IconButton
-          onClick={handlePrevClick}
-          disabled={value === 0}
-        >
-          <NavigateBeforeIcon />
-        </IconButton>
-        <IconButton
-          onClick={handleNextClick}
-          disabled={value === MotorsData.length - 1}
-        >
-          <NavigateNextIcon />
-        </IconButton>
+        {/* Кнопки "Попередній" і "Наступний" */}
+        <Box
+  sx={{
+    display: 'flex',
+    alignItems: 'center',
+    gap: theme.spacing(2),
+  }}
+>
+  <IconButton onClick={handlePrevClick} disabled={value === 0}>
+    <NavigateBeforeIcon />
+  </IconButton>
+  <IconButton onClick={handleNextClick} disabled={value === groupKeys.length}>
+    <NavigateNextIcon />
+  </IconButton>
+</Box>
       </Box>
 
       <Grid container spacing={3} justifyContent="center">
