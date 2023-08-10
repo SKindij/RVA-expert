@@ -7,6 +7,7 @@ import Copyright from './components/common/Copyright';
 const RoletsPage = lazy(() => import('./components/pages/RoletsPage'));
 const GatesPage = lazy(() => import('./components/pages/GatesPage'));
 const MotorsPage = lazy(() => import('./components/pages/MotorsPage'));
+const ExchangeRate = 41.20;
 
 export default function App() {
   return (
@@ -18,7 +19,7 @@ export default function App() {
             <Route path="/" element={<MainPage />} />
             <Route path="/rolets" element={<RoletsPage />} />
             <Route path="/gates" element={<GatesPage />} />
-            <Route path="/motors" element={<MotorsPage />} />
+            <Route path="/motors" element={<MotorsPage exchangeRate={ExchangeRate}/>} />
           </Routes>
       </Suspense>
         <Copyright />
