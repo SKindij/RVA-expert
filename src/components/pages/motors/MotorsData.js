@@ -86,7 +86,7 @@ swing: [
   {
   id: 'A202',
   title: 'ATHOS AC А40 EURO ',
-    image: 'https://img.freepik.com/free-psd/creative-writing-landing-page-template_23-2149000239.jpg?w=1480&t=st=1672770296~exp=1672770896~hmac=9b4adf12a579737f75cdb03b40caea04abf429697cc402306959bc235391659e',
+    image: '/images/p-motors/ATHOS-А40-EURO.jpg',
     product: 'Комплект BFT для розпашних воріт',
     kit: 'Телескопічні приводи 220V, контролер ALENA, фотоелементи, 2 пульта Mitto/B2.',
     description: 'Побутові двигуни на стулки до 4,0м',
