@@ -3,7 +3,7 @@ export const MotorsData = {
   { 	    
     id: 'A101',
   title: 'DEIMOS BT A400 KIT',
-      image: 'https://img.freepik.com/free-psd/minimal-interiors-landing-page-theme_23-2148633241.jpg?w=1480&t=st=1672770221~exp=1672770821~hmac=376837f648a1fbe333e886db4087012619f88f6f3a685f43735d7f5a40ca2bff',
+      image: '/images/p-motors/DEIMOS-A400.jpg',
   product: 'Комплект BFT для відкатних воріт',
   kit: 'Привід 24V з платою HAMAL на DIP-перемикачах. Вбудований приймач. 2 пульта Mitto/B2.',
   description: 'Електропривід для стулки до 400 кг',
@@ -76,7 +76,7 @@ swing: [
   {
     id: 'A201',
     title: 'ATHOS AC A25 EURO',
-    image: 'https://img.freepik.com/free-vector/banking-app-interface-concept_52683-41896.jpg?w=1380&t=st=1672770470~exp=1672771070~hmac=31f9f91155dbeb0964a7f73156d91364b97830f6ca015308866bfcda078eba84',
+    image: '/images/p-motors/ATHOS-AC-A25.jpg',
     product: 'Автоматика BFT на розпашні ворота',
     kit: 'Телескопічні приводи 220V, контролер ALENA, фотоелементи, 2 пульта Mitto/B2.',
     description: 'Побутові двигуни на стулки до 2,5м',
@@ -96,7 +96,7 @@ swing: [
   {
   id: 'A203',
   title: 'KUSTOS BT A25',
-      image: 'https://img.freepik.com/free-vector/furniture-shopping-app-concept_23-2148653684.jpg?w=1380&t=st=1672770465~exp=1672771065~hmac=1d94a51c03aa731e89ec3543c55a418acb91848d138aa8df20eab7b1474188f6',
+      image: '/images/p-motors/KUSTOS-BT-A25.jpg',
       product: 'Автоматика BFT на розпашні ворота',
   kit: 'Телескопічні приводи 24V, контролер ZARA, фотоелементи, 2 пульта Mitto/B2.',
       description: 'Інтенсивні двигуни на стулки до 2,5м',
