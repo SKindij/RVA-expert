@@ -106,7 +106,7 @@ swing: [
   {
   id: 'A204',
   title: 'KUSTOS А25 PRO',
-      image: 'https://img.freepik.com/free-vector/eco-tourism-landing-page-with-man-illustrated_52683-44064.jpg?w=1380&t=st=1672770314~exp=1672770914~hmac=43170f54fac90bd1c020215b4a0086964e174e6e40c25df09ad3b733a38b6a45',
+      image: '/images/p-motors/KUSTOS-А25-PRO.jpg',
       product: 'Комплект BFT для розпашних воріт',
   kit: 'Телескопічні приводи 24V, контролер THALIA, фотоелементи, 2 пульта Mitto/B2.',
       description: 'Інтенсивні двигуни на стулки до 2,5м',
@@ -116,7 +116,7 @@ swing: [
   {
   id: 'A205',
   title: 'VIRGO SMART BT A20',
-      image: 'https://img.freepik.com/free-vector/banking-app-interface-concept_52683-41896.jpg?w=1380&t=st=1672770470~exp=1672771070~hmac=31f9f91155dbeb0964a7f73156d91364b97830f6ca015308866bfcda078eba84',
+      image: '/images/p-motors/VIRGO-SMART-A20.jpg',
       product: 'Автоматика BFT розпашна серія',
   kit: 'Ричажні приводи 24V, контролер THALIA, 2 пульта Mitto/B2.',
       description: 'Інтенсивні двигуни на стулки до 2,0м',
@@ -126,7 +126,7 @@ swing: [
   {
   id: 'A206',
   title: 'KIT R20/320',
-      image: 'https://img.freepik.com/free-vector/eco-tourism-landing-page-with-man-illustrated_52683-44064.jpg?w=1380&t=st=1672770314~exp=1672770914~hmac=43170f54fac90bd1c020215b4a0086964e174e6e40c25df09ad3b733a38b6a45',
+      image: '/images/p-motors/R20-320.jpg',
       product: 'Комплект Roger розпашний',
   kit: 'Лінійні приводи 220V, електронний блок H70/200AC/BOX, 2 пульта E80/TX52R/2.',
       description: 'Інтенсивні двигуни на стулки до 2,5м',
