@@ -136,7 +136,7 @@ swing: [
 	{
   id: 'A207',
   title: 'KIT Monos4/mini',
-      image: 'https://img.freepik.com/free-vector/furniture-shopping-app-concept_23-2148653684.jpg?w=1380&t=st=1672770465~exp=1672771065~hmac=1d94a51c03aa731e89ec3543c55a418acb91848d138aa8df20eab7b1474188f6',
+      image: '/images/p-motors/Monos4-mini.jpg',
       product: 'Розпашна автоматика Brushless',
   kit: 'Телескопічні приводи 36V, контролер B70/2DC/BOX, 2 пульта E80/TX52R/2.',
       description: 'Інтенсивні двигуни на стулки до 2,5м',
