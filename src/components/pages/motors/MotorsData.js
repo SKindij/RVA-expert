@@ -23,7 +23,7 @@ export const MotorsData = {
   {
   id: 'A103',
   title: 'DEIMOS BT A600 ULTRA',
-      image: 'https://img.freepik.com/free-vector/african-american-woman-different-age_74855-6768.jpg?w=1800&t=st=1672770231~exp=1672770831~hmac=bf878ea66da2e62b602d24ce0bb3550912c4a2b8fd3beff41a855f40f7508067',
+      image: '/images/p-motors/DEIMOS-A600-ULTRA.jpg',
       product: 'Комплект BFT для відкатних воріт',
   kit: 'Привід 24V з платою MERAK з екраном. Вбудований приймач. 2 пульта Mitto/B2.',
       description: 'Електропривід для стулки до 600 кг',
@@ -33,7 +33,7 @@ export const MotorsData = {
   {
   id: 'A104',
   title: 'KIT H30/640',
-      image: 'https://img.freepik.com/free-vector/taxi-service-onboarding-app-screens_52683-32031.jpg?w=1380&t=st=1672770414~exp=1672771014~hmac=c42651311eec49666aad235f7ab8db20c0c3c8bd37eeb8a4f48dbf58da64b733',
+      image: '/images/p-motors/H30-640.jpg',
       product: 'Відкатний комплект Roger',
   kit: 'Привід 220V з платою керування H70/104AC. Приймач H93/RX22A/I. 2 пульта E80/TX52R/2.',
       description: 'Електропривід для воріт до 600 кг',

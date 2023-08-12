@@ -27,7 +27,7 @@ const BrandsWrapper = styled(Box)(({ theme }) => ({
     marginBottom: '4rem', marginTop: '3rem',
     display: 'flex', justifyContent: 'space-between',
     alignItems: 'center',
-    '& > img': {height: '60px'},
+    '& > img': {height: '60px', maxWidth: '100%'},
     [theme.breakpoints.down('md')]: {
         flexDirection: 'column',
         '& > img': {marginBottom: '1rem'}
@@ -36,14 +36,14 @@ const BrandsWrapper = styled(Box)(({ theme }) => ({
 
 const MotorBrands = () => {
     return (
-      <>
+      <Box>
         <SectionTitle title="Перевірена часом" colored="італійська якість" />   
         <BrandsWrapper>
           {
             brands.map( (brand, i) => <img key={i} src={brand.src} alt={brand.alt} />)
           }
         </BrandsWrapper>
-      </>
+      </Box>
 
     );
 };
