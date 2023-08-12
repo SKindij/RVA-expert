@@ -123,24 +123,24 @@ swing: [
       price: 595,
   type: 'swing'
     },
+    {
+      id: 'A206',
+      title: 'KIT Monos4/mini',
+          image: '/images/p-motors/Monos4-mini.jpg',
+          product: 'Розпашна автоматика Brushless',
+      kit: 'Телескопічні приводи 36V, контролер B70/2DC/BOX, 2 пульта E80/TX52R/2.',
+          description: 'Інтенсивні на стулки до 2,5м',
+          price: 644,
+      type: 'swing'
+  },
   {
-  id: 'A206',
+  id: 'A207',
   title: 'KIT R20/320',
       image: '/images/p-motors/R20-320.jpg',
       product: 'Комплект Roger розпашний',
   kit: 'Лінійні приводи 220V, електронний блок H70/200AC/BOX, 2 пульта E80/TX52R/2.',
       description: 'Інтенсивні на стулки до 2,5м',
       price: 658,
-  type: 'swing'
-    },
-	{
-  id: 'A207',
-  title: 'KIT Monos4/mini',
-      image: '/images/p-motors/Monos4-mini.jpg',
-      product: 'Розпашна автоматика Brushless',
-  kit: 'Телескопічні приводи 36V, контролер B70/2DC/BOX, 2 пульта E80/TX52R/2.',
-      description: 'Інтенсивні на стулки до 2,5м',
-      price: 644,
   type: 'swing'
     },
   ],

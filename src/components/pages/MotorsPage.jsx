@@ -1,5 +1,5 @@
 // components/pages/MotorsPage.jsx
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import Navigation from '../navigation/Navigation';
@@ -9,10 +9,10 @@ import Typography from '@mui/material/Typography';
 import MotorBrands from './motors/MotorBrands';
 import MotorTypes from './motors/MotorTypes';
 import MotorGoods from './motors/MotorGoods';
-import VideoGallery from './motors/VideoGallery';
 import MotorFAQ from './motors/MotorFAQ';
 import './page-styles-module.css';
-
+// Ліниво завантажуємо компонент VideoGallery
+const VideoGallery = lazy(() => import('./motors/VideoGallery'));
 const videoUrls = [
   {
    id: 'V101',
@@ -46,8 +46,6 @@ const videoUrls = [
    },  
 ];
 
-
-
 function MotorsPage({ exchangeRate }) {
   const [showNavigation, setShowNavigation] = useState(false);
   useEffect(() => {
@@ -64,11 +62,11 @@ function MotorsPage({ exchangeRate }) {
     <Helmet>
       <title>RVA Автоматика для воріт</title>
       <meta name="description"
-        content="Якщо Вам потрібна автоматика для воріт, ви прийшли в потрібне місце!"
+        content="Якщо Вам потрібна автоматика для воріт чи шлагбауми, то тут ви знайдете багато цікавого!"
       />
       <meta name="keywords" 
-        content="розпашна автоматика, відкатний двигун, автоматична ролета, шлагбаум,
-          установка двигуна, монтаж автоматики, установка ролет, радіоприймач, запис пульта" />
+        content="розпашна автоматика, відкатний двигун, шлагбаум, автоматика на ворота,
+          установка двигуна, монтаж автоматики, радіоприймач, запис пульта" />
       <link rel="canonical" href="https://rva.expert/motors" />
     </Helmet>
     {/* Перевіряємо, чи можемо відображати навігацію */}
@@ -82,7 +80,10 @@ function MotorsPage({ exchangeRate }) {
       <MotorBrands />
       <MotorTypes />
       <MotorGoods exchangeRate={exchangeRate} />
-      <VideoGallery videoUrls={videoUrls} />
+      {/* Використовуємо Suspense для лінивого завантаження VideoGallery */}
+      <Suspense fallback={<div>Loading...</div>}>
+        <VideoGallery videoUrls={videoUrls} />
+      </Suspense>
       <MotorFAQ />
     </Container>
   </>

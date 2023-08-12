@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet';
 import { useContext } from 'react';
 import { BreakpointsContext } from '../breakpoints-context';
@@ -6,9 +7,10 @@ import Welcome from '../welcome/Welcome';
 import Navigation from '../navigation/Navigation';
 import MainCompany from './MainCompany';
 import MainGallery from './MainGallery';
-import MainWhyUs from './MainWhyUs';
-import MainObjects from './MainObjects';
-import MainContacts from './MainContacts';
+
+const MainWhyUs = lazy(() => import('./MainWhyUs'));
+const MainObjects = lazy(() => import('./MainObjects'));
+const MainContacts = lazy(() => import('./MainContacts'));
 
 const appbarVariants = {
   initial: { y: -100 },
@@ -55,9 +57,11 @@ export default function MainPage() {
         )}
       <MainCompany />
       <MainGallery />
-      <MainWhyUs />
-      <MainObjects />   
-      <MainContacts />
+      <Suspense fallback={<div>Loading...</div>}>
+        <MainWhyUs />
+        <MainObjects />   
+        <MainContacts />
+      </Suspense>
     </>
   );
 }
