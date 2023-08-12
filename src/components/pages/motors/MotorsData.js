@@ -149,7 +149,7 @@ barrier: [
   {
   id: 'A301',
   title: 'GIOTTO BT ULTRA 36',
-      image: 'https://img.freepik.com/free-vector/autumn-color-tone-social-media-blog-mobile-phone-template_53876-119178.jpg?w=1380&t=st=1672770467~exp=1672771067~hmac=fafa8eb6f351b5857a7a23723b4a2791480bb68a6a1189c9920c49fd40465853',
+      image: '/images/p-motors/GIOTTO-ULTRA-36.jpg',
       product: 'Шлагбаум BFT',
   kit: 'Стійка 24V, контролер MERAK, стріла 4м.',
       description: 'Електромеханічний швидкісний шлагбаум',
@@ -159,7 +159,7 @@ barrier: [
   {
   id: 'A302',
   title: 'GIOTTO BT ULTRA 36 XL',
-      image: 'https://img.freepik.com/free-vector/autumn-color-tone-social-media-blog-mobile-phone-template_53876-119178.jpg?w=1380&t=st=1672770467~exp=1672771067~hmac=fafa8eb6f351b5857a7a23723b4a2791480bb68a6a1189c9920c49fd40465853',
+      image: '/images/p-motors/GIOTTO-ULTRA-XL.jpg',
       product: 'Шлагбаум BFT',
   kit: 'Стійка 24V, контролер MERAK, стріла 5м.',
       description: 'Електромеханічний швидкісний шлагбаум',
