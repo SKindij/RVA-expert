@@ -43,7 +43,7 @@ export const MotorsData = {
     {
   id: 'A105',
   title: 'KIT BM30/400',
-      image: 'https://img.freepik.com/free-vector/mobile-app-flyer-template_52683-2978.jpg?w=826&t=st=1672770399~exp=1672770999~hmac=7648712c678c2c3be735c66700c3c52eb6a71c3942fca2363f88f2d3d19b146c',
+      image: '/images/p-motors/BM30-400.jpg',
       product: 'Відкатний комплект Brushless',
   kit: 'Привід 36V з платою керування B70/1DC. Приймач H93/RX20A/I. 2 пульта E80/TX52R/2.',
       description: 'Електропривід для воріт до 500 кг',
@@ -53,7 +53,7 @@ export const MotorsData = {
   {
   id: 'A106',
   title: 'ARES BT A1000 KIT',
-      image: 'https://img.freepik.com/free-vector/banking-transaction-app-interface_52683-41135.jpg?w=1380&t=st=1672770409~exp=1672771009~hmac=e102a83c7c073523afb2e0916fcea140c404d74d8724a2eb38f0cbf696a58660',
+      image: '/images/p-motors/ARES-A1000.jpg',
       product: 'Комплект BFT для відкатних воріт',
   kit: 'Привід 24V з платою HAMAL на DIP-перемикачах. Вбудований приймач. 2 пульта Mitto/B2.',
       description: 'Двигун для стулки до 1000 кг',
@@ -62,8 +62,8 @@ export const MotorsData = {
     },	  
   {
   id: 'A107',
-  title: 'R30/1204 ',
-      image: 'https://img.freepik.com/free-psd/flat-design-renewable-energy-landing-page-template_23-2149476782.jpg?w=1480&t=st=1672770260~exp=1672770860~hmac=98a652a5fd2b20b136f7cc718b0bfe8a099af9cd1d4b6c6edc9b713f8b69202a',
+  title: 'R30/1204',
+      image: '/images/p-motors/R30-1204.jpg',
       product: 'Відкатний привід Roger',
   kit: 'Привід 220V з платою керування H70/104AC.',
       description: 'Електропривід для воріт до 1200 кг',
@@ -99,7 +99,7 @@ swing: [
       image: '/images/p-motors/KUSTOS-BT-A25.jpg',
       product: 'Автоматика BFT розпашна серія',
   kit: 'Телескопічні приводи 24V, контролер ZARA, фотоелементи, 2 пульта Mitto/B2.',
-      description: 'Інтенсивні двигуни на стулки до 2,5м',
+      description: 'Інтенсивні на стулки до 2,5м',
       price: 530,
   type: 'swing'
     },
@@ -109,7 +109,7 @@ swing: [
       image: '/images/p-motors/KUSTOS-А25-PRO.jpg',
       product: 'Комплект BFT для розпашних воріт',
   kit: 'Телескопічні приводи 24V, контролер THALIA, фотоелементи, 2 пульта Mitto/B2.',
-      description: 'Інтенсивні двигуни на стулки до 2,5м',
+      description: 'Інтенсивні на стулки до 2,5м',
       price: 530,
   type: 'swing'
     },
@@ -119,7 +119,7 @@ swing: [
       image: '/images/p-motors/VIRGO-SMART-A20.jpg',
       product: 'Автоматика BFT розпашна серія',
   kit: 'Ричажні приводи 24V, контролер THALIA, 2 пульта Mitto/B2.',
-      description: 'Інтенсивні двигуни на стулки до 2,0м',
+      description: 'Інтенсивні на стулки до 2,0м',
       price: 595,
   type: 'swing'
     },
@@ -129,7 +129,7 @@ swing: [
       image: '/images/p-motors/R20-320.jpg',
       product: 'Комплект Roger розпашний',
   kit: 'Лінійні приводи 220V, електронний блок H70/200AC/BOX, 2 пульта E80/TX52R/2.',
-      description: 'Інтенсивні двигуни на стулки до 2,5м',
+      description: 'Інтенсивні на стулки до 2,5м',
       price: 658,
   type: 'swing'
     },
@@ -139,7 +139,7 @@ swing: [
       image: '/images/p-motors/Monos4-mini.jpg',
       product: 'Розпашна автоматика Brushless',
   kit: 'Телескопічні приводи 36V, контролер B70/2DC/BOX, 2 пульта E80/TX52R/2.',
-      description: 'Інтенсивні двигуни на стулки до 2,5м',
+      description: 'Інтенсивні на стулки до 2,5м',
       price: 644,
   type: 'swing'
     },
