@@ -60,11 +60,11 @@ RVA-expert/
       ├─ common/
       │   ├─ CanvasAccordion.jsx      
       │   ├─ CommoData.jsx
+      │   ├─ ProductCard.jsx
       │   ├─ SectionTitle.jsx
       │   ├─ SectionTitleTwo.jsx      
-      │   ├─ TypographyVariants.jsx
       │   ├─ StyledImages.jsx
-      │   │
+      │   ├─ TypographyVariants.jsx
       │   └─ Copyright.jsx
       │
       ├─ welcome/
