@@ -169,7 +169,7 @@ barrier: [
   {
   id: 'A303',
   title: 'SET BIONIK/4LE',
-      image: 'https://img.freepik.com/free-vector/autumn-color-tone-social-media-blog-mobile-phone-template_53876-119178.jpg?w=1380&t=st=1672770467~exp=1672771067~hmac=fafa8eb6f351b5857a7a23723b4a2791480bb68a6a1189c9920c49fd40465853',
+      image: '/images/p-motors/BIONIK-4LE.jpg',
       product: 'Шлагбаум Brushless',
   kit: 'Стійка 36V з вбудованою лампою, блок CTRL Digital Controller, стріла 4м еліптична із гумовою накладкою.',
       description: 'Електромеханічний інтенсивний шлагбаум',
