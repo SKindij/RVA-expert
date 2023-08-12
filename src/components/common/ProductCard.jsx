@@ -10,36 +10,23 @@ const ProductCard = ({ title, image, product, description, kit, price, exchangeR
         '&:hover': {boxShadow: (theme) => theme.shadows[6]},
       }}
     >
-      <CardMedia
-        sx={{height: 0, paddingTop: '56.25%'}} // 16:9      
-        image={image} title={title}
-      />
+      <CardMedia sx={{height: 0, paddingTop: '56.25%'}} image={image} title={title}/>
       <CardContent sx={{ padding: (theme) => theme.spacing(2)}}>
-        <Typography variant="h6"
-          sx={{marginBottom: (theme) => theme.spacing(1)}}
-        >
-          {title}
+        <Typography variant="h6" sx={{ marginBottom: (theme) => theme.spacing(1), color: (theme) => theme.palette.primary.main}}>
+            {title}
         </Typography>
-        <Typography variant="body2"
-          sx={{color: '#888', marginBottom: 3}}
-        >
-          {product}
+        <Typography variant="body2" sx={{color: '#7AB259', marginBottom: 2}}>
+            {product}
         </Typography>
-        <Typography variant="body2" gutterBottom>
-          {kit}
+        <Typography variant="body2" sx={{color: '#888'}} gutterBottom>
+            {kit}
         </Typography>
 		<Typography variant="body2"
-          sx={{
-            color: (theme) => theme.palette.text.secondary,
-            marginBottom: (theme) => theme.spacing(2),
-          }}
-        >
-          {description}
+          sx={{color: (theme) => theme.palette.text.secondary, marginBottom: (theme) => theme.spacing(2)}}>
+            {description}
         </Typography>
-        <Typography variant="subtitle1"
-          sx={{fontWeight: 'bold', color: (theme) => theme.palette.primary.main}}
-        >
-          {(price * exchangeRate).toFixed(0)} грн
+        <Typography variant="subtitle1" sx={{fontWeight: 'bold', color: (theme) => theme.palette.primary.main}}>
+            {(price * exchangeRate).toFixed(0)} грн
         </Typography>
       </CardContent>
     </Card>
