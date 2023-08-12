@@ -24,7 +24,7 @@ const brands = [
   },
 ]
 const BrandsWrapper = styled(Box)(({ theme }) => ({
-    marginBottom: '4rem', marginTop: '3rem',
+    marginBottom: '2rem', marginTop: '2rem',
     display: 'flex', justifyContent: 'space-between',
     alignItems: 'center',
     '& > img': {height: '60px', maxWidth: '100%'},

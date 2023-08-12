@@ -61,7 +61,7 @@ const MotorTypes = () => {
     <Box>
       <SectionTitle title="Ми надаємо наступні" colored="товари та послуги" />
 
-      <Grid sx={{ mt: 4 }} container spacing={2}>
+      <Grid sx={{ mt: 2 }} container spacing={2}>
         {types.map( (service, i) => (
           <Grid item xs={12} sm={6} md={4} key={i}>
             <Service service={service} />
