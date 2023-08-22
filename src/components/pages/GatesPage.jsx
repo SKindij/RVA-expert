@@ -5,7 +5,6 @@ import Navigation from '../navigation/Navigation';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-
 import GateTypes from './gates/GateTypes';
 import GateFAQ from './gates/GateFAQ';
 
@@ -39,10 +38,9 @@ function GatesPage() {
           Майстерність та інновації: Ворота для всіх випадків життя
         </Typography>
       </Box>
-
       <GateTypes />
+      {/* тут планується новий блок із контентом */}
       <GateFAQ />
-
     </Container>
   </>
   );
