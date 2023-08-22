@@ -8,9 +8,9 @@ const GoodsGallery = ({ images, alts }) => {
         <Carousel autoPlay showArrows={true} interval={5000}>
           {images.map((image, index) => (
             <img
-              key={`image-${index}`} // Унікальний ключ
+              key={`image-${index}`}
               src={image}
-              alt={alts[index] || `Image ${index}`} // Використовуємо альтернативний текст або дефолтний
+              alt={alts[index]}
             />
           ))}
         </Carousel>

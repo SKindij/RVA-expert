@@ -10,28 +10,28 @@ const GatesGoods = () => {
       firstDescription: "Перша частина опису блоку A",
       secondDescription: "Друга частина опису блоку A",
       images: ["/images/p-gates/image1a.jpg", "/images/p-gates/image2a.jpg", "/images/p-gates/image3a.jpg"],
-      alts: ["коричневі ворота", "секційні ворота", "гаражні ворота"]
+      alts: ["коричневі ворота", "підготовка проєму під ворота", "ворота з коричневих панелей"]
   };
   const blockBData = {
     title: "Заголовок блоку B",
     firstDescription: "Перша частина опису блоку B",
     secondDescription: "Друга частина опису блоку B",
     images: ["/images/p-gates/image1b.jpg", "/images/p-gates/image2b.jpg", "/images/p-gates/image3b.jpg"],
-    alts: ["ворота антрацит", "секційні ворота", "гаражні ворота"]
+    alts: ["ворота антрацит дошка", "секційні ворота із середини гаража", "гаражні ворота додому"]
   };
   const blockCData = {
     title: "Заголовок блоку C",
     firstDescription: "Перша частина опису блоку C",
     secondDescription: "Друга частина опису блоку C",
     images: ["/images/p-gates/image1c.jpg", "/images/p-gates/image2c.jpg", "/images/p-gates/image3c.jpg"],
-    alts: ["коричневі ворота", "секційні ворота", "промислові ворота"]
+    alts: ["ворота з панелей срібло", "монтаж воріт на склад", "промислові ворота з цепним приводом"]
   };
   const blockDData = {
     title: "Заголовок блоку D",
     firstDescription: "Перша частина опису блоку D",
     secondDescription: "Друга частина опису блоку D",
     images: ["/images/p-gates/image1d.jpg", "/images/p-gates/image2d.jpg", "/images/p-gates/image3d.jpg"],
-    alts: ["коричневі ворота", "секційні ворота", "промислові ворота"]
+    alts: ["ворота із хвірткою", "проєм для промислових воріт", "ворота на підприємство"]
   };
 
   return (
