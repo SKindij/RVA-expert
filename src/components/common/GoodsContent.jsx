@@ -1,16 +1,19 @@
 import { Box, Typography } from '@mui/material';
 
-const Content = ({ title, description }) => {
+const GoodsContent = ({ title, firstDescription, secondDescription }) => {
   return (
     <Box>
       <Typography variant="h5" gutterBottom>
         {title}
       </Typography>
+      <Typography variant="body1" paragraph>
+        {firstDescription}
+      </Typography>
       <Typography variant="body1">
-        {description}
+        {secondDescription}
       </Typography>
     </Box>
   );
 };
 
-export default Content;
+export default GoodsContent;
