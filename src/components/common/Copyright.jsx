@@ -7,7 +7,7 @@ export default function Copyright() {
         {'Copyright © Tech Solutions'}{' '}{new Date().getFullYear()}
       </Typography>
       <Typography variant="body2" color="text.secondary" align="center">
-        {'rva.expert v.0.4.3 by SKindij'}
+        {'rva.expert v.0.4.4 by SKindij'}
       </Typography>
     </section>
   );
