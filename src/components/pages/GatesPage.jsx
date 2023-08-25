@@ -6,8 +6,10 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import GateTypes from './gates/GateTypes';
-import GatesGoods from './gates/GatesGoods';
+import PageGoods from '../common/PageGoods';
+import { blocksDataForGates } from './blocksData';
 import GateFAQ from './gates/GateFAQ';
+
 
 function GatesPage() {
   const [showNavigation, setShowNavigation] = useState(false);
@@ -40,7 +42,7 @@ function GatesPage() {
         </Typography>
       </Box>
       <GateTypes />
-      <GatesGoods />
+      <PageGoods blocksData={blocksDataForGates} />
       <GateFAQ />
     </Container>
   </>
