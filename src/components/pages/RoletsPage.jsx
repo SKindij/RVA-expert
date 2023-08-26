@@ -5,8 +5,10 @@ import Navigation from '../navigation/Navigation';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-
 import RoletTypes from './rolets/RoletTypes';
+import PageGoods from '../common/PageGoods';
+import SectionTitle from '../common/SectionTitle';
+import { blocksDataForRollets } from './blocksData';
 import RoletFAQ from './rolets/RoletFAQ';
 
 function RoletsPage() {
@@ -39,10 +41,12 @@ function RoletsPage() {
           Зовнішні Захисні Алюмінієві Ролети
         </Typography>
       </Box>
-
       <RoletTypes />
+      <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100%' }}>
+        <SectionTitle title="Разом із нами" colored="можливо все!" />
+        <PageGoods blocksData={blocksDataForRollets} />
+      </Box>  
       <RoletFAQ />
-
     </Container>
   </>
   );
