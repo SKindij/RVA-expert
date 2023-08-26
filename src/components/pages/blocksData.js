@@ -32,18 +32,18 @@ export const blocksDataForGates = [
   
 export const blocksDataForRollets = [
   {
-    title: "",
-    firstDescription: "",
-    secondDescription: "",
-    images: ["/images/p-rolets/image1a.jpg", "/images/p-rolets/image2a.jpg", "/images/p-rolets/image3a.jpg"],
-    alts: ["", "", ""]
+    title: "Сучасні ролети для приватного будинку",
+    firstDescription: "Перетворіть свій будинок в справжню красу з нашими сучасними ролетами, які пропонують найвищий рівень захисту та декоративності.",
+    secondDescription: "Завдяки великому вибору кольорів та матеріалів, ви зможете знайти ролети, що ідеально підійдуть до вашого будинку.",
+    images: ["/images/p-rolets/image1a.jpg", ],
+    alts: ["ролети нтрацит на приватний будинок", ]
   },
   {
-    title: "",
-    firstDescription: "",
-    secondDescription: "",
-    images: ["/images/p-rolets/image1b.jpg", "/images/p-rolets/image2b.jpg", "/images/p-rolets/image3b.jpg"],
-    alts: ["", "", ""]
+    title: "Ефектні ролети для віконного оформлення",
+    firstDescription: "Прикрасьте свої вікна стильними ролетами, які додадуть вашому інтер'єру новий вигляд і контроль за освітленістю приміщення.",
+    secondDescription: "Наші ролети виготовлені з високоякісних матеріалів, які забезпечують довгий термін служби та збереження якості.",
+    images: ["/images/p-rolets/image1b.jpg", "/images/p-rolets/image2b.jpg", ],
+    alts: ["срібна ролета на вікні", "ролета на другий поверх", ]
   },  
 ];
   
