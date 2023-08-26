@@ -42,13 +42,26 @@ export const blocksDataForRollets = [
     title: "",
     firstDescription: "",
     secondDescription: "",
-    images: ["/images/p-rolets/image1a.jpg", "/images/p-rolets/image2a.jpg", "/images/p-rolets/image3a.jpg"],
+    images: ["/images/p-rolets/image1b.jpg", "/images/p-rolets/image2b.jpg", "/images/p-rolets/image3b.jpg"],
     alts: ["", "", ""]
   },  
 ];
   
 export const blocksDataForMotors = [
-  // Дані для третьої сторінки
+  {
+    title: "",
+    firstDescription: "",
+    secondDescription: "",
+    images: ["/images/p-motors/image1a.jpg", "/images/p-motors/image2a.jpg", "/images/p-motors/image3a.jpg"],
+    alts: ["", "", ""]
+  },
+  {
+    title: "",
+    firstDescription: "",
+    secondDescription: "",
+    images: ["/images/p-motors/image1b.jpg", "/images/p-motors/image2b.jpg", "/images/p-motors/image3b.jpg"],
+    alts: ["", "", ""]
+  },
 ];
 
  
