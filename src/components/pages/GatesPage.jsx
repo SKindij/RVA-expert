@@ -7,6 +7,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import GateTypes from './gates/GateTypes';
 import PageGoods from '../common/PageGoods';
+import SectionTitle from '../common/SectionTitle';
 import { blocksDataForGates } from './blocksData';
 import GateFAQ from './gates/GateFAQ';
 
@@ -42,7 +43,10 @@ function GatesPage() {
         </Typography>
       </Box>
       <GateTypes />
-      <PageGoods blocksData={blocksDataForGates} />
+      <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100%' }}>
+        <SectionTitle title="Разом із нами" colored="можливо все!" />
+        <PageGoods blocksData={blocksDataForGates} />
+      </Box>     
       <GateFAQ />
     </Container>
   </>
