@@ -17,7 +17,7 @@ const GoodsGallery = ({ images, alts }) => {
                 key={`image-${index}`}
                 src={image}
                 alt={alts[index]}
-                style={{ maxWidth: '100%', height: 'auto', objectFit: 'contain', borderRadius: '20px' }}
+                style={{ maxWidth: '100%', maxHeight:'400px', objectFit: 'contain', borderRadius: '20px' }}
               />
             ))}
           </Carousel>
