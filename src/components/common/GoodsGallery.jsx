@@ -4,25 +4,31 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const GoodsGallery = ({ images, alts }) => {
-    return (
-        <Box
-          display="flex" justifyContent="center"
-          alignItems="center" flexDirection="column"
-          mx="auto" p={1} boxShadow={2} borderRadius={8}
-          maxWidth="100%"
-        >
-          <Carousel autoPlay interval={5000} style={{ width: '100%' }}>
-            {images.map((image, index) => (
-              <img
-                key={`image-${index}`}
-                src={image}
-                alt={alts[index]}
-                style={{ maxWidth: '100%', maxHeight:'400px', objectFit: 'contain', borderRadius: '20px' }}
+  return (
+    <Box
+      display="flex" justifyContent="center"
+      alignItems="center" flexDirection="column"
+      mx="auto" p={1} boxShadow={2} borderRadius={8}
+      maxWidth="100%" overflow="hidden"
+    >
+      <Carousel 
+        autoPlay interval={5000} infiniteLoop
+        style={{ width: '100%' }} swipeScrollTolerance={100} 
+        showArrows={true} swipeable={true}
+        preventMovementUntilSwipeScrollTolerance
+      >
+          {images.map((image, index) => (
+            <div key={`image-${index}`} style={{ height: '70vh' }}>
+              <img            
+                src={image} alt={alts[index]}
+                style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '20px' }}
               />
-            ))}
-          </Carousel>
-        </Box>
-    );
+            </div>
+            
+          ))}
+        </Carousel>
+    </Box>
+  );
 };
 GoodsGallery.propTypes = {
   images: PropTypes.array.isRequired,

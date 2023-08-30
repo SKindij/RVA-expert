@@ -13,24 +13,24 @@ const PageGoods = ({ blocksData }) => {
       {index % 2 === 0 ? (
         // Парна ітерація: <GoodsContent/> ліворуч, <GoodsGallery/> праворуч
         <>
-          <Grid item xs={10} md={6}>
+          <Grid item xs={12} md={6}>
             <GoodsContent
               title={blockData.title}
               firstDescription={blockData.firstDescription}
               secondDescription={blockData.secondDescription}
             />
           </Grid>
-          <Grid item xs={10} md={6}>
+          <Grid item xs={12} md={6}>
             <GoodsGallery images={blockData.images} alts={blockData.alts} />
           </Grid>
         </>
       ) : (
         // Непарна ітерація: <GoodsGallery/> ліворуч, <GoodsContent/> праворуч
         <>
-          <Grid item xs={10} md={6}>
+          <Grid item xs={12} md={6}>
             <GoodsGallery images={blockData.images} alts={blockData.alts} />
           </Grid>
-          <Grid item xs={10} md={6}>
+          <Grid item xs={12} md={6}>
             <GoodsContent
               title={blockData.title}
               firstDescription={blockData.firstDescription}
