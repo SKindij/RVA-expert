@@ -2,8 +2,11 @@ import PropTypes from 'prop-types';
 import { Box } from '@mui/material';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { useMediaQuery } from '@mui/material';
 
 const GoodsGallery = ({ images, alts }) => {
+  const isLargeScreen = useMediaQuery((theme) => theme.breakpoints.up('md'));
+  const showThumbs = isLargeScreen ? true : false;
   return (
     <Box
       display="flex" justifyContent="center"
@@ -15,6 +18,7 @@ const GoodsGallery = ({ images, alts }) => {
         autoPlay interval={5000} infiniteLoop
         style={{ width: '100%' }} swipeScrollTolerance={100} 
         showArrows={true} swipeable={true}
+        showThumbs={showThumbs} thumbWidth={70}
         preventMovementUntilSwipeScrollTolerance
       >
           {images.map((image, index) => (
