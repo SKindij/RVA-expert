@@ -1,7 +1,7 @@
 {
   "name": "rva-expert",
   "private": true,
-  "version": "0.5.7",
+  "version": "0.6.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -15,6 +15,7 @@
     "@fontsource/roboto": "^5.0.5",
     "@mui/icons-material": "^5.14.0",
     "@mui/material": "^5.14.0",
+    "@mui/system": "^5.14.7",
     "clsx": "^2.0.0",
     "framer-motion": "^10.13.0",
     "prop-types": "^15.8.1",
