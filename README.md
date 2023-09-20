@@ -9,13 +9,12 @@ During the development of this SPA I used:
 
 
 
-
 - - -
 
 ### 📚 The project structure (architecture):
 
-```css
-RVA-expert/
+```go
+📁 RVA-expert/
 │
 ├─ index.html
 │
@@ -24,7 +23,7 @@ RVA-expert/
 ├─ .gitignore
 ├─ .eslintrc.cjs
 │
-├─ public/
+├─ 📁 public/
 │   ├─ site.webmanifest
 │   ├─ robots.txt
 │   ├─ .htaccess
@@ -37,27 +36,27 @@ RVA-expert/
 │   ├─ favicon-16x16.png
 │   ├─ favicon-32x32.png
 │   │
-│   └─ images/
+│   └─ 📁 images/
 │      ├─ rva.png
 │      ├─ background.jpg
 │      │
-│      ├─ m-gallery/
-│      ├─ m-objects/
-│      ├─ p-gates/
-│      ├─ p-rolets
-│      └─ p-motors/
+│      ├─ 📁 m-gallery/
+│      ├─ 📁 m-objects/
+│      ├─ 📁 p-gates/
+│      ├─ 📁 p-rolets
+│      └─ 📁 p-motors/
 │
-└─ src/
+└─ 📁 src/
    ├─ main.jsx
    ├─ style.css
    ├─ theme.jsx
    │
    ├─ App.jsx
    │
-   └─ components
+   └─ 📁 components
       ├─ breakpoints-context.jsx
       │
-      ├─ common/
+      ├─ 📁 common/
       │   ├─ CanvasAccordion.jsx      
       │   ├─ CommoData.jsx
       │   ├─ ProductCard.jsx
@@ -67,7 +66,7 @@ RVA-expert/
       │   ├─ TypographyVariants.jsx
       │   └─ Copyright.jsx
       │
-      ├─ welcome/
+      ├─ 📁 welcome/
       │   ├─ Welcome.jsx
       │   │
       │   ├─ WelcomeLogo.jsx
@@ -77,7 +76,7 @@ RVA-expert/
       │   ├─ WelcomeButton.jsx
       │   └─ WelcomeParticles.jsx
       │
-      ├─ navigation/
+      ├─ 📁 navigation/
       │   ├─ Navigation.jsx
       │   │
       │   ├─ NavLogo.jsx
@@ -86,37 +85,39 @@ RVA-expert/
       │   ├─ NavDrawer.jsx
       │   └─ NavSplit.jsx
       │
-      ├─ main/
+      ├─ 📁 main/
       │   ├─ MainPage.jsx
       │   │
       │   ├─ MainCompany.jsx
-      │   ├─ Company/
+      │   ├─ 📁 Company/
       │   │            
       │   ├─ MainGallery.jsx
-      │   ├─ Gallery/
+      │   ├─ 📁 Gallery/
       │   │
       │   ├─ MainWhyUs.jsx
-      │   ├─ WhyUs/
+      │   ├─ 📁 WhyUs/
       │   │      
       │   ├─ MainObjects.jsx
-      │   ├─ Objects/
+      │   ├─ 📁 Objects/
       │   │ 
       │   ├─ MainContacts.jsx           
-      │   └─ Contacts/
+      │   └─ 📁 Contacts/
       │
-      └─ pages/
+      └─ 📁 pages/
          ├─ RoletsPage.jsx
-         ├─ rolets/
+         ├─ 📁 rolets/
          │
          ├─ GatesPage.jsx
-         ├─ gates/
+         ├─ 📁 gates/
          │
          ├─ MotorsPage.jsx
-         ├─ motors/
+         ├─ 📁 motors/
          │
          └─ page-styles-module.css
-
          
 ```
 
+### Try It Out
+
+You can experience the app firsthand by visiting the link: https://rva.expert/
 
