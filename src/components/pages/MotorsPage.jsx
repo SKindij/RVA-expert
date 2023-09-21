@@ -9,6 +9,9 @@ import Typography from '@mui/material/Typography';
 import MotorBrands from './motors/MotorBrands';
 import MotorTypes from './motors/MotorTypes';
 import MotorGoods from './motors/MotorGoods';
+import PageGoods from '../common/PageGoods';
+import SectionTitle from '../common/SectionTitle';
+import { blocksDataForMotors } from './blocksData';
 import MotorFAQ from './motors/MotorFAQ';
 import './page-styles-module.css';
 // Ліниво завантажуємо компонент VideoGallery
@@ -80,6 +83,10 @@ function MotorsPage({ exchangeRate }) {
       <MotorBrands />
       <MotorTypes />
       <MotorGoods exchangeRate={exchangeRate} />
+      <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100%' }}>
+        <SectionTitle title="Разом із нами" colored="можливо все!" />
+        <PageGoods blocksData={blocksDataForMotors} />
+      </Box>      
       {/* Використовуємо Suspense для лінивого завантаження VideoGallery */}
       <Suspense fallback={<div>Loading...</div>}>
         <VideoGallery videoUrls={videoUrls} />
