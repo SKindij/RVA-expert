@@ -62,4 +62,18 @@ export const blocksDataForMotors = [
     images: ["/images/p-motors/image1b.jpg", "/images/p-motors/image2b.jpg", "/images/p-motors/image3b.jpg"],
     alts: ["", "", ""]
   },
+  {
+    title: "",
+    firstDescription: "",
+    secondDescription: "",
+    images: ["/images/p-motors/image1c.jpg", "/images/p-motors/image2c.jpg", "/images/p-motors/image3c.jpg"],
+    alts: ["", "", ""]
+  },
+  {
+    title: "",
+    firstDescription: "",
+    secondDescription: "",
+    images: ["/images/p-motors/image1d.jpg", "/images/p-motors/image2d.jpg", "/images/p-motors/image3d.jpg"],
+    alts: ["", "", ""]
+  },
 ];
