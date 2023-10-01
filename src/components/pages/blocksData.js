@@ -70,10 +70,10 @@ export const blocksDataForMotors = [
     alts: ["відкатний Nice Home", "Filo 600 KIT", "фотоелементи Nice Home", "автоматика Filo 600"]
   },
   {
-    title: "",
-    firstDescription: "",
-    secondDescription: "",
-    images: ["/images/p-motors/image1d.jpg", "/images/p-motors/image2d.jpg", "/images/p-motors/image3d.jpg"],
-    alts: ["", "", ""]
+    title: "Швидкісні, інтенсивні шлагбауми",
+    firstDescription: "Це надійне та ефективне рішення для котеджних містечок і таунхаусів. Ці шлагбауми розроблені для тих, хто цінує зручність та безпеку у в'їзді на свою територію. Вони працюють надійно у будь-яких погодних умовах і забезпечують довгий термін служби.",
+    secondDescription: "Вони можуть працювати в швидкісному режимі, навіть при інтенсивному русі автотранспорту. Це зробить в'їзд на вашу територію максимально зручним та безпечним для всіх мешканців.",
+    images: ["/images/p-motors/image1d.jpg", "/images/p-motors/image2d.jpg", "/images/p-motors/image3d.jpg", "/images/p-motors/image4d.jpg"],
+    alts: ["шлагбаум в котеджне містечко", "швидкісний бар'єр", "шлагбаум для таунхаусів", "інтенсивний шлагбаум"]
   },
 ];
