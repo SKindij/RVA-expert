@@ -49,11 +49,11 @@ export const blocksDataForRollets = [
 
 export const blocksDataForMotors = [
   {
-    title: "",
-    firstDescription: "",
-    secondDescription: "",
+    title: "Roger Technology H30/640 - Ваш ідеальний вибір для автоматизації відкатних воріт",
+    firstDescription: "Це передовий і надійний двигун, який відзначається високою продуктивністю та довговічністю. Цей продукт став вже давно справжньою класикою у світі монтажу автоматики для воріт.",
+    secondDescription: "Roger H30/640 - це ідеальний вибір для тих, хто цінує комфорт і безпеку. Цей двигун вирізняється своєю надійністю і продуктивністю, забезпечуючи плавне і безшумне відкривання та закривання ваших воріт.",
     images: ["/images/p-motors/image1a.jpg", "/images/p-motors/image2a.jpg", "/images/p-motors/image3a.jpg"],
-    alts: ["", "", ""]
+    alts: ["Roger H30/640", "надійний відкатний двигун", "класика відкатної автоматики"]
   },
   {
     title: "",

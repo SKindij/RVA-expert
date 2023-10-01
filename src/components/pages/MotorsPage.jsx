@@ -81,12 +81,12 @@ function MotorsPage({ exchangeRate }) {
         </Typography>
       </Box>
       <MotorBrands />
-      <MotorTypes />
-      <MotorGoods exchangeRate={exchangeRate} />
+      <MotorTypes />      
       <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100%' }}>
         <SectionTitle title="Разом із нами" colored="можливо все!" />
         <PageGoods blocksData={blocksDataForMotors} />
-      </Box>      
+      </Box>
+      <MotorGoods exchangeRate={exchangeRate} />
       {/* Використовуємо Suspense для лінивого завантаження VideoGallery */}
       <Suspense fallback={<div>Loading...</div>}>
         <VideoGallery videoUrls={videoUrls} />
