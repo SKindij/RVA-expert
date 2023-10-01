@@ -35,8 +35,8 @@ export const blocksDataForRollets = [
     title: "Сучасні ролети для приватних будинків",
     firstDescription: "Оновіть свій будинок за допомогою сучасних ролет, які поєднують найвищий рівень захисту та естетичності. Зробіть свій будинок ще кращим.",
     secondDescription: "З різноманітним вибором кольорів і матеріалів, ви зможете знайти ролети, які ідеально впишуться у ваш інтер'єр.",
-    images: ["/images/p-rolets/image1a.jpg", "/images/p-rolets/image2a.jpg" ],
-    alts: ["вигляд на ролети зсередини кімнати", "сучасні ролети для приватних будинків" ]
+    images: ["/images/p-rolets/image1a.jpg", "/images/p-rolets/image2a.jpg", "/images/p-rolets/image3a.jpg", "/images/p-rolets/image4a.jpg" ],
+    alts: ["монтаж захисних ролет", "вигляд на ролети зсередини кімнати", "сучасні ролети для приватних будинків", "котедж із ролетами"]
   },
   {
     title: "Ефектні ролети для оформлення вікон",
@@ -66,8 +66,8 @@ export const blocksDataForMotors = [
     title: "Nice Home Filo 600 KIT - Завжди в безпеці і комфорті",
     firstDescription: "Це передовий комплект автоматики для відкатних воріт, який забезпечує вас комфортом і безпекою. Цей продукт розроблений для використання на воротах зі стулкою вагою до 600 кг і довжиною до 7 метрів.",
     secondDescription: "Nice Home Filo 600 KIT забезпечує повний контроль над вашими воротами і гарантує їх безперебійну роботу. Великий діапазон робочих температур, що робить його ідеальним для різних кліматичних умов.",
-    images: ["/images/p-motors/image1c.jpg", "/images/p-motors/image2c.jpg", "/images/p-motors/image3c.jpg", "/images/p-motors/image4c.jpg"],
-    alts: ["відкатний Nice Home", "Filo 600 KIT", "фотоелементи Nice Home", "автоматика Filo 600"]
+    images: ["/images/p-motors/image1c.jpg", "/images/p-motors/image2c.jpg", "/images/p-motors/image3c.jpg", "/images/p-motors/image4c.jpg", "/images/p-motors/image5c.jpg"],
+    alts: ["відкатний Nice Home", "Filo 600 KIT", "фотоелементи Nice Home", "коричневі відкатні ворота", "автоматика Filo 600"]
   },
   {
     title: "Швидкісні, інтенсивні шлагбауми",
