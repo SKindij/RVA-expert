@@ -63,11 +63,11 @@ export const blocksDataForMotors = [
     alts: ["", "", ""]
   },
   {
-    title: "",
-    firstDescription: "",
-    secondDescription: "",
-    images: ["/images/p-motors/image1c.jpg", "/images/p-motors/image2c.jpg", "/images/p-motors/image3c.jpg"],
-    alts: ["", "", ""]
+    title: "Nice Home Filo 600 KIT - Завжди в безпеці і комфорті",
+    firstDescription: "Це передовий комплект автоматики для відкатних воріт, який забезпечує вас комфортом і безпекою. Цей продукт розроблений для використання на воротах зі стулкою вагою до 600 кг і довжиною до 7 метрів.",
+    secondDescription: "Nice Home Filo 600 KIT забезпечує повний контроль над вашими воротами і гарантує їх безперебійну роботу. Великий діапазон робочих температур, що робить його ідеальним для різних кліматичних умов.",
+    images: ["/images/p-motors/image1c.jpg", "/images/p-motors/image2c.jpg", "/images/p-motors/image3c.jpg", "/images/p-motors/image4c.jpg"],
+    alts: ["відкатний Nice Home", "Filo 600 KIT", "фотоелементи Nice Home", "автоматика Filo 600"]
   },
   {
     title: "",
